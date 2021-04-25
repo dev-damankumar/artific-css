@@ -1,0 +1,806 @@
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-input {
+    width: 100%;
+    border: 1px solid #ededed;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.form-input:focus{
+    -moz-box-shadow: 0px 1px 13px rgba(0 ,0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0 ,0, 0, 0.1);
+    box-shadow: 0px 1px 13px rgba(0 ,0, 0, 0.1);
+}
+select.form-input {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+    background-color: rgb(255,255,255);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 30px;
+}
+
+.form-group, .custom-control {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.custom-control {
+    min-height: 1.5rem;
+    padding-left: 25px;
+}
+
+.custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: 50%;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: rgb(255,255,255);
+    border: #d3d3d3 solid 1px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.custom-control-label::before, .custom-file-label, .custom-select {
+    -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: rgb(255,255,255);
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: .25rem;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    display: block;
+}
+
+.custom-control-label::after {
+    position: absolute;
+    top: 46%;
+    left: -21px;
+
+    width: 10px;
+    height: 5px;
+    content: "";
+    border: 2px solid white;
+    border-top: 0;
+    border-right: 0;
+    -webkit-transform: translateY(-50%) rotate(
+            -45deg
+    );
+    -ms-transform: translateY(-50%) rotate(
+            -45deg
+    );
+    transform: translateY(-50%) rotate(
+            -45deg
+    );
+    display: none;
+}
+
+.form {
+    -moz-box-shadow: 0 6px 26px rgba(0 ,0, 0 ,0.08);
+    -webkit-box-shadow: 0 6px 26px rgba(0 ,0, 0 ,0.08);
+    box-shadow: 0 6px 26px rgba(0 ,0, 0 ,0.08);
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.msg {
+    position: absolute;
+    background: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    top: 100%;
+    right: 0;
+    z-index: 9;
+    margin-top: 8px;
+    font-weight: 600;
+    -moz-box-shadow: 0 6px 26px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 6px 26px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 26px rgba(0, 0, 0, 0.12);
+}
+
+.msg:before {
+    content: "";
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent rgb(255,255,255) transparent;
+    position: absolute;
+    top: -14px;
+    right: 16px;
+}
+
+.msg.success-field:before {
+    border-color: transparent transparent var(--success) transparent;
+}
+
+.msg.error-field:before {
+    border-color: transparent transparent var(--danger) transparent;
+}
+
+.success-field {
+    background-color: var(--success);
+    color: white;
+}
+
+.error-field {
+    background-color: var(--danger);
+    color: white;
+}
+.custom-radio .custom-control-label::before {
+    border-radius: 50%;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    display: block;
+    border-radius: 50px;
+    border: 4px solid white;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: -20px;
+    background: inherit;
+}
+.custom-range {
+    width: 100%;
+    height: calc(1rem + .4rem);
+    padding: 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.custom-range::-webkit-slider-thumb {
+    width: 1rem;
+    height: 1rem;
+    margin-top: -.25rem;
+    background-color: var(--primary);
+    border: 0;
+    border-radius: 1rem;
+    -webkit-transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.custom-range:focus::-webkit-slider-thumb {
+    -moz-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+}
+
+.custom-range::-webkit-slider-thumb {
+    -moz-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem rgb(230 230 230);
+}
+.custom-range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: .5rem;
+    color: transparent;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    border-color: transparent;
+    border-radius: 1rem;
+    -moz-box-shadow: 0 6px 26px rgba(0, 0, 0,0.08);
+    -webkit-box-shadow: 0 6px 26px rgba(0, 0, 0,0.08);
+    box-shadow: 0 6px 26px rgba(0, 0, 0,0.08);
+}
+.custom-switch {
+    padding-left: 2.25rem;
+}
+
+.custom-switch .custom-control-label::before {
+    left: -2.25rem;
+    width: 1.75rem;
+    pointer-events: all;
+    border-radius: .5rem;
+}
+
+.custom-switch .custom-control-label::after {
+    top: 50%;
+    left: calc(-2.25rem + 2px);
+    width: calc(1rem - 4px);
+    height: calc(1rem - 4px);
+    background-color: #dcdcdc;
+    border-radius: .5rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-transform .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-transform .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: none;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: rgb(255,255,255);
+    -webkit-transform: translateX(.75rem) translateY(-50%);
+    -ms-transform: translateX(.75rem) translateY(-50%);
+    transform: translateX(.75rem) translateY(-50%);
+}
+
+.custom-file {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin-bottom: 16px;
+}
+.custom-file-input {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin: 0;
+    opacity: 0;
+}
+.custom-file-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: rgb(255,255,255);
+    border: 1px solid #ededed;
+    border-radius: .25rem;
+}
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Browse";
+}
+.custom-file-label::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: 2.25rem;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #ededed;
+    border-left: inherit;
+    border-radius: 0 .25rem .25rem 0;
+}
+.custom-control-input:checked ~ .input-primary:before {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+}
+
+.input-primary .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--primary) !important;
+}
+
+.input-primary::-webkit-slider-thumb {
+    background-color: var(--primary) !important;
+}
+
+.custom-control-input:checked ~ .input-success:before {
+    background-color: var(--success) !important;
+    border-color: var(--success) !important;
+    color: white !important;
+}
+
+.input-success .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--success) !important;
+}
+
+.input-success::-webkit-slider-thumb {
+    background-color: var(--success) !important;
+}
+
+.custom-control-input:checked ~ .input-danger:before {
+    background-color: var(--danger) !important;
+    border-color: var(--danger) !important;
+    color: white !important;
+}
+
+.input-danger .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--danger) !important;
+}
+
+.input-danger::-webkit-slider-thumb {
+    background-color: var(--danger) !important;
+}
+
+.custom-control-input:checked ~ .input-info:before {
+    background-color: var(--info) !important;
+    border-color: var(--info) !important;
+    color: white !important;
+}
+
+.input-info .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--info) !important;
+}
+
+.input-info::-webkit-slider-thumb {
+    background-color: var(--info) !important;
+}
+
+.custom-control-input:checked ~ .input-warning:before {
+    background-color: var(--warning) !important;
+    border-color: var(--warning) !important;
+    color: white !important;
+}
+
+.input-warning .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--warning) !important;
+}
+
+.input-warning::-webkit-slider-thumb {
+    background-color: var(--warning) !important;
+}
+
+
+.custom-control-input:checked ~ .input-light:before {
+    background-color: var(--light) !important;
+    border-color: #d3d3d3 !important;
+}
+
+.input-light .custom-file-label::after {
+    color: var(--dark);
+    background-color: var(--light) !important;
+}
+
+.input-light::-webkit-slider-thumb {
+    background-color: var(--light) !important;
+}
+
+.custom-control-input:checked ~ .input-light::after {
+    border-color: var(--dark) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-light::after {
+    background: var(--dark) !important;
+}
+
+.custom-control-input:checked ~ .input-dark:before {
+    background-color: var(--dark) !important;
+    border-color: var(--dark) !important;
+    color: white !important;
+}
+
+.input-dark .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--dark) !important;
+}
+
+.input-dark::-webkit-slider-thumb {
+    background-color: var(--dark) !important;
+}
+
+.custom-control-input:checked ~ .input-primary-invert:before {
+    background-color: var(--primary-invert) !important;
+    border-color: var(--primary-invert) !important;
+    color: var(--primary-invert-text) !important;
+}
+
+.input-primary-invert .custom-file-label::after {
+    color: var(--primary-invert-text);
+    background-color: var(--primary-invert) !important;
+}
+
+.input-primary-invert::-webkit-slider-thumb {
+    background-color: var(--primary-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-primary-invert::after {
+    background: var(--primary-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-primary-invert::after {
+    border-color: var(--primary-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-success-invert:before {
+    background-color: var(--success-invert) !important;
+    border-color: var(--success-invert) !important;
+    color: var(--success-invert-text) !important;
+}
+
+.input-success-invert .custom-file-label::after {
+    color: var(--success-invert-text);
+    background-color: var(--success-invert) !important;
+}
+
+.input-success-invert::-webkit-slider-thumb {
+    background-color: var(--success-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-success-invert::after {
+    background: var(--success-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-success-invert::after {
+    border-color: var(--success-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-danger-invert:before {
+    background-color: var(--danger-invert) !important;
+    border-color: var(--danger-invert) !important;
+    color: var(--danger-invert-text) !important;
+}
+
+.input-danger-invert .custom-file-label::after {
+    color: var(--danger-invert-text);
+    background-color: var(--danger-invert) !important;
+}
+
+.input-danger-invert::-webkit-slider-thumb {
+    background-color: var(--danger-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-danger-invert::after {
+    background: var(--danger-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-danger-invert::after {
+    border-color: var(--danger-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-info-invert:before {
+    background-color: var(--info-invert) !important;
+    border-color: gainsboro !important;
+    color: var(--info-invert-text) !important;
+}
+
+.input-info-invert .custom-file-label::after {
+    color: var(--info-invert-text);
+    background-color: var(--info-invert) !important;
+}
+
+.input-info-invert::-webkit-slider-thumb {
+    background-color: var(--info-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-info-invert::after {
+    background: var(--info-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-info-invert::after {
+    border-color: var(--info-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-warning-invert:before {
+    background-color: var(--warning-invert) !important;
+    border-color: var(--warning-invert) !important;
+    color: var(--warning-invert-text) !important;
+}
+
+.input-warning-invert .custom-file-label::after {
+    color: var(--warning-invert-text);
+    background-color: var(--warning-invert) !important;
+}
+
+.input-warning-invert::-webkit-slider-thumb {
+    background-color: var(--warning-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-warning-invert::after {
+    background: var(--warning-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-warning-invert::after {
+    border-color: var(--warning-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-light-invert:before {
+    background-color: var(--light-invert) !important;
+    border-color: gainsboro !important;
+    color: var(--light-invert-text) !important;
+}
+
+.input-light-invert .custom-file-label::after {
+    color: var(--light-invert-text);
+    background-color: var(--light-invert) !important;
+}
+
+.input-light-invert::-webkit-slider-thumb {
+    background-color: var(--light-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-light-invert::after {
+    background: var(--light-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-light-invert::after {
+    border-color: var(--light-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-dark-invert:before {
+    background-color: var(--dark-invert) !important;
+    border-color: var(--dark-invert) !important;
+    color: var(--dark-invert-text) !important;
+}
+
+.input-dark-invert .custom-file-label::after {
+    color: var(--dark-invert-text);
+    background-color: var(--dark-invert) !important;
+}
+
+.input-dark-invert::-webkit-slider-thumb {
+    background-color: var(--dark-invert) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-dark-invert::after {
+    background: var(--dark-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-dark-invert::after {
+    border-color: var(--dark-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-primary-light-invert:before {
+    background-color: var(--primary-invert) !important;
+    border-color: var(--primary-invert) !important;
+    color: rgb(255,255,255) !important;
+}
+
+.input-primary-light-invert .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--primary-invert) !important;
+}
+
+.input-primary-light-invert::-webkit-slider-thumb {
+    background-color: var(--primary-invert) !important;
+}
+
+
+.custom-control-input:checked ~ .input-success-light-invert:before {
+    background-color: var(--success-invert) !important;
+    border-color: var(--success-invert) !important;
+    color: rgb(255,255,255) !important;
+}
+
+.input-success-light-invert .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--success-invert) !important;
+}
+
+.input-success-light-invert::-webkit-slider-thumb {
+    background-color: var(--success-invert) !important;
+}
+
+.custom-control-input:checked ~ .input-danger-light-invert:before {
+    background-color: var(--danger-invert) !important;
+    border-color: var(--danger-invert) !important;
+    color: rgb(255,255,255) !important;
+}
+
+.input-danger-light-invert .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--danger-invert) !important;
+}
+
+.input-danger-light-invert::-webkit-slider-thumb {
+    background-color: var(--danger-invert) !important;
+}
+
+.custom-control-input:checked ~ .input-info-light-invert:before {
+    background-color: var(--info-invert) !important;
+    border-color: gainsboro !important;
+    color: rgb(255,255,255) !important;
+}
+
+.input-info-light-invert .custom-file-label::after {
+    color: var(--info-invert-text);
+    background-color: var(--info-invert) !important;
+}
+
+.input-info-light-invert::-webkit-slider-thumb {
+    background-color: var(--info-invert) !important;
+}
+
+
+.custom-switch .custom-control-input:checked ~ .input-info-light-invert::after {
+    background: var(--info-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-info-light-invert::after {
+    border-color: var(--info-invert-text) !important;
+}
+
+
+.custom-control-input:checked ~ .input-warning-light-invert:before {
+    background-color: var(--warning-invert) !important;
+    border-color: var(--warning-invert) !important;
+    color: rgb(255,255,255) !important;
+}
+
+.input-warning-light-invert .custom-file-label::after {
+    color: rgb(255,255,255);
+    background-color: var(--warning-invert) !important;
+}
+
+.input-warning-light-invert::-webkit-slider-thumb {
+    background-color: var(--warning-invert) !important;
+}
+
+.custom-control-input:checked ~ .input-info-light-invert::after {
+    border-color: var(--info-invert-text) !important;
+}
+
+.custom-control-input:checked ~ .input-primary-light:before {
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+    border: 1px solid var(--primary-light-border) !important;
+}
+
+.input-primary-light .custom-file-label::after {
+    color: var(--primary);
+    background-color: var(--primary-light-border) !important;
+}
+
+.input-primary-light::-webkit-slider-thumb {
+    background-color: var(--primary-light) !important;
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--primary) !important;
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--primary) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-primary-light::after {
+    background: var(--primary) !important;
+}
+
+.custom-control-input:checked ~ .input-primary-light::after {
+    border-color: var(--primary) !important;
+}
+
+.custom-control-input:checked ~ .input-success-light:before {
+    background-color: var(--success-light) !important;
+    color: var(--success) !important;
+    border: 1px solid var(--success-light-border) !important;
+}
+
+.input-success-light .custom-file-label::after {
+    color: var(--success);
+    background-color: var(--success-light) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-success-light::after {
+
+    background: var(--success) !important;
+}
+
+.input-success-light::-webkit-slider-thumb {
+    background-color: var(--success-light) !important;
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--success) !important;
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--success) !important;
+}
+
+.custom-control-input:checked ~ .input-success-light::after {
+    border-color: var(--success) !important;
+}
+
+.custom-control-input:checked ~ .input-danger-light:before {
+    background-color: var(--danger-light) !important;
+    color: var(--danger) !important;
+    border: 1px solid var(--danger-light-border) !important;
+}
+
+.input-danger-light .custom-file-label::after {
+    color: var(--danger);
+    background-color: var(--danger-light) !important;
+}
+
+.input-danger-light::-webkit-slider-thumb {
+    background-color: var(--danger-light) !important;
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--danger) !important;
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--danger) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-danger-light::after {
+    background: var(--danger) !important;
+}
+
+.custom-control-input:checked ~ .input-danger-light::after {
+    border-color: var(--danger) !important;
+}
+
+.custom-control-input:checked ~ .input-info-light:before {
+    background-color: var(--info-light) !important;
+    color: var(--info) !important;
+    border: 1px solid var(--info-light-border) !important;
+}
+
+.input-info-light .custom-file-label::after {
+    color: var(--info);
+    background-color: var(--info-light-border) !important;
+}
+
+.input-info-light::-webkit-slider-thumb {
+    background-color: var(--info-light) !important;
+    -webkit-box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--info) !important;
+    box-shadow: 0 0 0 1px rgb(255,255,255), 0 0 0 0.2rem var(--info) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-info-light::after {
+    background: var(--info) !important;
+}
+
+.custom-control-input:checked ~ .input-info-light::after {
+    border-color: var(--info) !important;
+}
+
+
+.custom-control-input:checked ~ .input-warning-light:before {
+    background-color: var(--warning-light) !important;
+    color: var(--warning) !important;
+    border: 1px solid var(--warning-light-border) !important;
+}
+
+.input-warning-light .custom-file-label::after {
+    color: var(--warning);
+    background-color: var(--warning-light) !important;
+}
+
+.input-warning-light::-webkit-slider-thumb {
+    background-color: var(--warning-light) !important;
+    -moz-box-shadow: 0 0 0 1px rgb(255, 255, 255), 0 0 0 0.2rem var(--warning) !important;
+    -webkit-box-shadow: 0 0 0 1px  rgb(255, 255, 255), 0 0 0 0.2rem var(--warning) !important;
+    box-shadow: 0 0 0 1px  rgb(255, 255, 255), 0 0 0 0.2rem var(--warning) !important;
+}
+
+.custom-switch .custom-control-input:checked ~ .input-warning-light::after {
+    background: var(--warning) !important;
+}
+
+.custom-control-input:checked ~ .input-warning-light::after {
+    border-color: var(--warning) !important;
+}

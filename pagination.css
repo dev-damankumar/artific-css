@@ -1,0 +1,261 @@
+.pagination {
+    list-style: none;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    -moz-box-shadow: 0px 1px 13px rgba(0 ,0 ,0 ,0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0 ,0 ,0 ,0.1);
+    box-shadow: 0px 1px 13px rgba(0 ,0 ,0 ,0.1);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-link {
+    text-decoration: none;
+    padding: 8px 15px;
+    min-width: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #303a52;
+    border-radius: 10px;
+}
+.page-link:hover{
+    background-color: #f5f5f5;
+}
+
+.pagination-seprate .page-link {
+    text-decoration: none;
+    padding: 7px 18px;
+    min-width: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0px 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    color: #303a52;
+    border-radius: 10px;
+}
+.pagination-seprate {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
+.page-item a {
+    border: 1px solid transparent;
+}
+.page-item.active a {
+    background: var(--primary);
+    color: white;
+}
+.page-item {
+    margin-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+.pagination-seprate .page-item {
+    margin-left: 0px;
+}
+.page-link.disabled {
+    background: #f6f6f6;
+    color: gray;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.breadcrumb {
+    list-style: none;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0,0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0,0.1);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.breadcrumb-link {
+    text-decoration: none;
+    padding: 8px 15px;
+    min-width: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #303a52;
+    border-radius: 10px;
+}
+
+.breadcrumb-link:hover {
+    background-color: #f5f5f5;
+}
+
+.breadcrumb-seprate .breadcrumb-link {
+    text-decoration: none;
+    padding: 7px 18px;
+    min-width: 30px;
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0 ,0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0 ,0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0 ,0.1);
+    margin-right: 10px;
+    color: #303a52;
+    border-radius: 10px;
+}
+
+.breadcrumb-seprate {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+.breadcrumb-item a {
+    border: 1px solid transparent;
+}
+
+.breadcrumb-item.active a {
+    background: var(--primary);
+    color: white;
+}
+
+.breadcrumb-item {
+    margin-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.breadcrumb-seprate .breadcrumb-item {
+    margin-left: 0px;
+}
+
+.breadcrumb-link.disabled {
+    background: #f6f6f6;
+    color: gray;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    cursor: not-allowed;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.breadcrumb-item:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #303a52;
+    -webkit-transform: rotate(
+            45deg
+    ) translateY(-50%);
+    -ms-transform: rotate(
+            45deg
+    ) translateY(-50%);
+    transform: rotate(
+            45deg
+    ) translateY(-50%);
+    z-index: 9;
+    border-left: 0;
+    border-bottom: 0;
+}
+.breadcrumb-seprate .breadcrumb-item:not(:last-child):before {
+    right: -5px;
+}
+.breadcrumb-item:not(:first-child) {
+    padding-left: 20px;
+}
+.breadcrumb-item:last-child {
+    padding-right: 20px;
+}
+.breadcrumb .breadcrumb-link{
+    background: whitesmoke;
+}
+.breadcrumb-seprate .breadcrumb-link{
+    background: white;
+}
+
+@media screen and (max-width: 600px) {
+    .breadcrumb-item:not(:first-child) {
+        padding-left: 10px;
+    }
+    .breadcrumb-seprate .breadcrumb-item:not(:last-child):before {
+        right: 0px;
+    }
+    .breadcrumb-seprate .breadcrumb-link {
+        padding: 2px 10px;
+        min-width: auto;
+        min-height: auto;
+        font-size: 13px;
+    }
+}

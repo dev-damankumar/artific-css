@@ -1,0 +1,356 @@
+.table-wrap {
+    overflow: visible;
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.table {
+    font-family: SegoeUI, sans-serif;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 100%;
+    color: #24292e;
+    line-height: 1.5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    outline: none !important;
+}
+
+.table th {
+    font-family: SegoeUI Semibold, sans-serif;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    max-width: 250px;
+    white-space: nowrap;
+    text-align: left;
+    font-size: 15px;
+    background: #fff;
+    font-weight: bold;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e9ecef;
+    border-top: 1px solid #e9ecef;
+}
+
+.dark-head th {
+    background: #303a52;
+    color: #fff;
+    z-index: 9;
+}
+
+.table tr:hover {
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+}
+
+.table td {
+    padding: 10px 15px;
+    font-size: 15px;
+    border-bottom: 1px solid #e9ecef;
+    white-space: nowrap;
+}
+
+.table-comfortable td {
+    padding: 15px !important;
+}
+
+.table.table-compact td {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.table.table-compact th {
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.table.table-super-compact td {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.table.table-super-compact th {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.table-responsive {
+    overflow: auto;
+}
+
+.table-borderless td,.table-borderless th{
+    border:none !important;
+}
+.table-striped tr:nth-child(even) td {
+    background: #f6f6f6;
+}
+.table-striped tr:hover td {
+    background: #eeeeee !important;
+}
+.table-striped tr:hover{
+    background: #eeeeee !important;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.table-primary th{
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+.table-success th{
+    background-color: var(--success) !important;
+    color: white !important;
+}
+.table-danger th{
+    background-color: var(--danger) !important;
+    color: white !important;
+}
+.table-info th{
+    background-color: var(--info) !important;
+    color: white !important;
+}
+.table-warning th{
+    background-color: var(--warning) !important;
+    color: white !important;
+}
+.table-light th{
+    background-color: var(--light) !important;
+    color: var(--dark) !important;
+}
+.table-dark th{
+    background-color: var(--dark) !important;
+    color: white !important;
+}
+
+.table-primary-invert th{
+    background-color: var(--primary-invert) !important;
+    color: var(--primary-invert-text) !important;
+}
+.table-success-invert th{
+    background-color: var(--success-invert) !important;
+    color: var(--success-invert-text) !important;
+}
+.table-danger-invert th{
+    background-color: var(--danger-invert) !important;
+    color: var(--danger-invert-text) !important;
+}
+.table-info-invert th{
+    background-color: var(--info-invert) !important;
+    color: var(--info-invert-text) !important;
+}
+.table-warning-invert th{
+    background-color: var(--warning-invert) !important;
+    color: var(--warning-invert-text) !important;
+}
+.table-light-invert th{
+    background-color: var(--light-invert) !important;
+    color: var(--light-invert-text) !important;
+}
+.table-dark-invert th{
+    background-color: var(--dark-invert) !important;
+    color: var(--dark-invert-text) !important;
+}
+
+
+.table-primary-light-invert th{
+    background-color: var(--primary-invert) !important;
+    color: #fff !important;
+}
+.table-success-light-invert th{
+    background-color: var(--success-invert) !important;
+    color: #fff !important;
+}
+.table-danger-light-invert th{
+    background-color: var(--danger-invert) !important;
+    color: #fff !important;
+}
+.table-info-light-invert th{
+    background-color: var(--info-invert) !important;
+    color: #fff !important;
+}
+.table-warning-light-invert th{
+    background-color: var(--warning-invert) !important;
+    color: #fff !important;
+}
+
+
+.table-primary-light th{
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+    border-color:  var(--primary-light-border) !important;
+}
+.table-success-light th{
+    background-color: var(--success-light) !important;
+    color: var(--success) !important;
+    border-color:  var(--success-light-border) !important;
+
+}
+.table-danger-light th{
+    background-color: var(--danger-light) !important;
+    color: var(--danger) !important;
+    border-color:  var(--danger-light-border) !important;
+
+}
+.table-info-light th{
+    background-color: var(--info-light) !important;
+    color: var(--info) !important;
+    border-color:  var(--info-light-border) !important;
+
+}
+.table-warning-light th{
+    background-color: var(--warning-light) !important;
+    color: var(--warning) !important;
+    border-color:  var(--warning-light-border) !important;
+
+}
+
+
+.table-primary-bg{
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+.table-success-bg{
+    background-color: var(--success) !important;
+    color: white !important;
+}
+.table-danger-bg{
+    background-color: var(--danger) !important;
+    color: white !important;
+}
+.table-info-bg{
+    background-color: var(--info) !important;
+    color: white !important;
+}
+.table-warning-bg{
+    background-color: var(--warning) !important;
+    color: white !important;
+}
+.table-light-bg{
+    background-color: var(--light) !important;
+    color: var(--dark) !important;
+}
+.table-dark-bg{
+    background-color: var(--dark) !important;
+    color: white !important;
+}
+
+.table-primary-bg-invert{
+    background-color: var(--primary-invert) !important;
+    color: var(--primary-invert-text) !important;
+}
+.table-success-bg-invert{
+    background-color: var(--success-invert) !important;
+    color: var(--success-invert-text) !important;
+}
+.table-danger-bg-invert{
+    background-color: var(--danger-invert) !important;
+    color: var(--danger-invert-text) !important;
+}
+.table-info-bg-invert{
+    background-color: var(--info-invert) !important;
+    color: var(--info-invert-text) !important;
+}
+.table-warning-bg-invert{
+    background-color: var(--warning-invert) !important;
+    color: var(--warning-invert-text) !important;
+}
+.table-light-bg-invert{
+    background-color: var(--light-invert) !important;
+    color: var(--light-invert-text) !important;
+}
+.table-dark-bg-invert{
+    background-color: var(--dark-invert) !important;
+    color: var(--dark-invert-text) !important;
+}
+
+
+.table-primary-bg-light-invert{
+    background-color: var(--primary-invert) !important;
+    color: #fff !important;
+}
+.table-success-bg-light-invert{
+    background-color: var(--success-invert) !important;
+    color: #fff !important;
+}
+.table-danger-bg-light-invert{
+    background-color: var(--danger-invert) !important;
+    color: #fff !important;
+}
+.table-info-bg-light-invert{
+    background-color: var(--info-invert) !important;
+    color: #fff !important;
+}
+.table-warning-bg-light-invert{
+    background-color: var(--warning-invert) !important;
+    color: #fff !important;
+}
+
+
+.table-primary-bg-light{
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+    border-color:  var(--primary-light-border) !important;
+}
+.table-success-bg-light{
+    background-color: var(--success-light) !important;
+    color: var(--success) !important;
+    border-color:  var(--success-light-border) !important;
+
+}
+.table-danger-bg-light{
+    background-color: var(--danger-light) !important;
+    color: var(--danger) !important;
+    border-color:  var(--danger-light-border) !important;
+
+}
+.table-info-bg-light{
+    background-color: var(--info-light) !important;
+    color: var(--info) !important;
+    border-color:  var(--info-light-border) !important;
+
+}
+.table-warning-bg-light{
+    background-color: var(--warning-light) !important;
+    color: var(--warning) !important;
+    border-color:  var(--warning-light-border) !important;
+
+}
+
+.table-primary-bg-light th,.table-primary-bg-light td{
+    background-color: var(--primary-light) !important;
+    color: var(--primary) !important;
+    border-color:  var(--primary-light-border) !important;
+}
+.table-success-bg-light th,.table-success-bg-light td{
+    background-color: var(--success-light) !important;
+    color: var(--success) !important;
+    border-color:  var(--success-light-border) !important;
+
+}
+.table-danger-bg-light th,.table-danger-bg-light td{
+    background-color: var(--danger-light) !important;
+    color: var(--danger) !important;
+    border-color:  var(--danger-light-border) !important;
+
+}
+.table-info-bg-light th,.table-info-bg-light td{
+    background-color: var(--info-light) !important;
+    color: var(--info) !important;
+    border-color:  var(--info-light-border) !important;
+
+}
+.table-warning-bg-light th,.table-warning-bg-light td{
+    background-color: var(--warning-light) !important;
+    color: var(--warning) !important;
+    border-color:  var(--warning-light-border) !important;
+
+}

@@ -1,0 +1,163 @@
+.alert {
+    padding: 15px;
+    border-radius: 10px;
+    -moz-box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.08);
+    background: #efefef;
+    margin-bottom: 1rem;
+}
+
+.alert.alert-primary {
+    background: #3d5af1;
+    color: white;
+}
+
+.alert.alert-danger {
+    background: #ff304f;
+    color: white;
+}
+
+.alert.alert-success {
+    color: #ffffff;
+    background: #17b978;
+}
+
+.alert.alert-info {
+    color: white;
+    background: #00d1ff;
+}
+
+.alert.alert-warning {
+    color: white;
+    background: #ff8a5c;
+}
+
+.alert.alert-light {
+    background: white;
+    color: #303a52;
+}
+
+.alert.alert-dark {
+    background: #303a52;
+    color: white;
+}
+
+.alert.alert-success-invert {
+    background: #21e6c1;
+    color: #071e3d;
+}
+
+.alert.alert-danger-invert {
+    background: #fc5185;
+    color: #000000;
+}
+
+.alert.alert-info-invert {
+    background: #fffeb8;
+    color: #361616;
+}
+
+.alert.alert-warning-invert {
+    background: #ffa45c;
+    color: #472001;
+}
+
+.alert.alert-dark-invert {
+    background: black;
+    color: white;
+}
+
+.alert.alert-light-invert {
+    background: #ecfffb;
+    color: #060608;
+}
+
+.alert.alert-primary-invert {
+    background: #9884f4;
+    color: #0f214d;
+}
+
+.alert.alert-primary-light {
+    color: #3d5af1;
+    background: #eaedff;
+    border: 1px solid #d9defa;
+}
+
+.alert.alert-success-light {
+    background: #d8f8eb;
+    color: #17b978;
+    border: 1px solid #b4f2d8;
+}
+
+.alert.alert-danger-light {
+    background: #ffe1e5;
+    color: #ff304f;
+    border: 1px solid #facbd1;
+}
+
+.alert.alert-info-light {
+    background: #e1faff;
+    color: #00d1ff;
+    border: 1px solid #a9e5f2;
+}
+
+.alert.alert-warning-light {
+    background: #fae5dd;
+    border: 1px solid #f6d5c9;
+    color: #fe8a5c;
+}
+
+
+.alert.alert-success-light-invert {
+    background: #21e6c1;
+    color: #fff;
+}
+
+.alert.alert-danger-light-invert {
+    background: #fc5185;
+    color: #fff;
+}
+
+.alert.alert-info-light-invert {
+    background: #22d1ee;
+    color: #fff;
+}
+
+.alert.alert-warning-light-invert {
+    background: #ffa45c;
+    color: #fff;
+}
+
+.alert.alert-primary-light-invert {
+    background: #9884f4;
+    color: #fff;
+}
+
+.alert-link {
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.alert .close {
+    float: right;
+    border: none;
+    background: no-repeat;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: .8;
+    cursor: pointer;
+    outline: none;
+}
+
+.alert *:last-child {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+    .alert {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,362 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-toggle:before {
+    position: absolute;
+    content: "";
+    top: calc(50% - 9px);
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border: 2px solid white;
+    border-top: 0;
+    border-left: 0;
+    -webkit-transform: translateY(calc(-50% + 7px)) rotate(
+            45deg
+    );
+    -ms-transform: translateY(calc(-50% + 7px)) rotate(
+            45deg
+    );
+    transform: translateY(calc(-50% + 7px)) rotate(
+            45deg
+    );
+}
+.navbar:not(.navbar-dark) .dropdown-toggle:before{
+    border-color: var(--dark);
+}
+
+.dropdown-toggle {
+    padding-right: 33px !important;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    left: 0;
+    -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    z-index: 9999;
+    top: calc(100% + 10px);
+    height: 0px;
+    visibility: hidden;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    overflow: hidden;
+    opacity: 0;
+}
+.dropdown-item:last-child{
+    border-radius: 0 0 10px 10px;
+}
+.dropdown-item:first-child{
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-menu:before {
+    content: "";
+    border-width: 7px;
+    border-style: solid;
+    border-color: #ff000000 #0000ff00 white #ffa50000;
+    position: absolute;
+    top: -14px;
+    left: 16px;
+}
+
+
+.dropdown-menu.dropdown-menu-right:before {
+    top: -14px;
+    right: 16px;
+    left: unset;
+}
+
+.dropdown-menu.dropdown-menu-right {
+    left: unset;
+    right: 0;
+}
+
+.dropdown-item:hover {
+    background: #f4f4f4;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 8px 15px;
+    color: #303a52;
+}
+
+.dropdown-drawer .dropdown-menu:before {
+    display: none;
+}
+
+.dropdown-divider {
+    height: 0;
+    width: 100%;
+    margin: .3rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+    display: block;
+}
+
+.dropdown-full .dropdown-menu {
+    width: 100%;
+}
+
+.dropdown-drawer .dropdown-menu {
+    border-radius: 0 0 10px 10px;
+    top: 100%;
+    width: 100%;
+    -moz-box-shadow: 0px 0px 13px rgba(0 ,0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 13px rgba(0 ,0, 0, 0.1);
+    box-shadow: 0px 0px 13px rgba(0 ,0, 0, 0.1);
+}
+
+.dropdown-drawer .dropdown-toggle {
+    border-radius: 10px 10px 0 0;
+
+}
+
+.dropdown-header {
+    display: block;
+    padding: 8px 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #575b5d;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.drop-right .dropdown-menu {
+    left: calc(100% + 10px);
+    right: unset;
+    top: 0;
+    width: auto;
+}
+
+.drop-right .dropdown-menu:before {
+    right: unset;
+    top: 15px;
+    left: -14px;
+    border-color: #e91e6300 #ffffff #ffffff00 #9c27b000;
+}
+
+.dropdown-drawer.drop-right .dropdown-toggle {
+    border-radius: 10px 0 0 10px;
+}
+
+.dropdown-drawer.drop-right .dropdown-menu {
+    border-radius: 0 10px 10px 10px;
+    left: 100%;
+}
+
+
+.drop-left .dropdown-menu {
+    right: calc(100% + 10px);
+    left: unset;
+    top: 0;
+    width: auto;
+}
+
+.drop-left .dropdown-menu:before {
+    left: unset;
+    top: 15px;
+    right: -14px;
+    border-color: #e91e6300 #ffffff00 #ffffff00 #ffffff;
+}
+
+.dropdown-drawer.drop-left .dropdown-toggle {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.dropdown-drawer.drop-left .dropdown-menu {
+    border-radius: 10px 0 10px 10px;
+    right: 100%;
+}
+
+
+.drop-up .dropdown-menu {
+    bottom: calc(100% + 10px);
+    top: unset;
+}
+
+.drop-up .dropdown-menu:before {
+    top: unset;
+    left: 14px;
+    bottom: -14px;
+    border-color: #ffffff #0000ff00 #ffffff00 #ffa50000;
+}
+
+.drop-up .dropdown-menu.dropdown-menu-right:before {
+    left: unset;
+}
+
+.dropdown-item-text {
+    display: block;
+    padding: 8px 15px;
+    color: #303a52;
+}
+
+.dropdown-drawer.drop-up .dropdown-toggle {
+    border-radius: 0 0 10px 10px;
+}
+
+.dropdown-drawer.drop-up .dropdown-menu {
+    border-radius: 10px 10px 0 0;
+    bottom: 100%;
+}
+
+.btn-primary ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-success ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success);
+    color: white;
+}
+
+.btn-danger ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger);
+    color: white;
+}
+
+.btn-info ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info);
+    color: white;
+}
+
+.btn-warning ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning);
+    color: white;
+}
+
+.btn-light ~ .dropdown-menu .dropdown-item.active {
+    background: #f4f4f4;
+    color: var(--light-invert-text);
+}
+
+.btn-dark ~ .dropdown-menu .dropdown-item.active {
+    background: var(--dark);
+    color: white;
+}
+
+.dropdown-item.active {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary-invert);
+    color: var(--primary-invert-text);
+}
+
+.btn-success-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success-invert);
+    color: var(--success-invert-text);
+}
+
+.btn-danger-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger-invert);
+    color: var(--danger-invert-text);
+}
+
+.btn-info-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info-invert);
+    color: var(--info-invert-text);
+}
+
+.btn-warning-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning-invert);
+    color: var(--warning-invert-text);
+}
+
+.btn-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--light-invert);
+    color: var(--light-invert-text);
+}
+
+.btn-dark-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--dark-invert);
+    color: var(--dark-invert-text);
+}
+
+
+.btn-primary-light ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.btn-success-light ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success-light);
+    color: var(--success);
+}
+
+.btn-danger-light ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger-light);
+    color: var(--danger);
+}
+
+.btn-info-light ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info-light);
+    color: var(--info);
+}
+
+.btn-warning-light ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning-light);
+    color: var(--warning);
+}
+
+
+.btn-primary-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary-invert);
+    color: white;
+}
+
+.btn-success-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success-invert);
+    color: white;
+}
+
+.btn-danger-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger-invert);
+    color: white;
+}
+
+.btn-info-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info-invert);
+    color: white;
+}
+
+.btn-warning-light-invert ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning-invert);
+    color: white;
+}
+
+
+.dropdown .btn-primary-light:before {
+    border-color: var(--primary);
+}
+
+.dropdown .btn-success-light:before {
+    border-color: var(--success);
+}
+
+.dropdown .btn-danger-light:before {
+    border-color: var(--danger);
+}
+
+.dropdown .btn-info-light:before {
+    border-color: var(--info);
+}
+
+.dropdown .btn-warning-light:before {
+    border-color: var(--warning);
+}
