@@ -241,7 +241,7 @@
 
 .btn-light ~ .dropdown-menu .dropdown-item.active {
     background: #f4f4f4;
-    color: var(--light-invert-text);
+    color: var(--light-alt-text);
 }
 
 .btn-dark ~ .dropdown-menu .dropdown-item.active {
@@ -254,39 +254,39 @@
     color: white;
 }
 
-.btn-primary-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--primary-invert);
-    color: var(--primary-invert-text);
+.btn-primary-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary-alt);
+    color: var(--primary-alt-text);
 }
 
-.btn-success-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--success-invert);
-    color: var(--success-invert-text);
+.btn-success-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success-alt);
+    color: var(--success-alt-text);
 }
 
-.btn-danger-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--danger-invert);
-    color: var(--danger-invert-text);
+.btn-danger-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger-alt);
+    color: var(--danger-alt-text);
 }
 
-.btn-info-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--info-invert);
-    color: var(--info-invert-text);
+.btn-info-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info-alt);
+    color: var(--info-alt-text);
 }
 
-.btn-warning-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--warning-invert);
-    color: var(--warning-invert-text);
+.btn-warning-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning-alt);
+    color: var(--warning-alt-text);
 }
 
-.btn-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--light-invert);
-    color: var(--light-invert-text);
+.btn-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--light-alt);
+    color: var(--light-alt-text);
 }
 
-.btn-dark-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--dark-invert);
-    color: var(--dark-invert-text);
+.btn-dark-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--dark-alt);
+    color: var(--dark-alt-text);
 }
 
 
@@ -316,28 +316,28 @@
 }
 
 
-.btn-primary-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--primary-invert);
+.btn-primary-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--primary-alt);
     color: white;
 }
 
-.btn-success-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--success-invert);
+.btn-success-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--success-alt);
     color: white;
 }
 
-.btn-danger-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--danger-invert);
+.btn-danger-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--danger-alt);
     color: white;
 }
 
-.btn-info-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--info-invert);
+.btn-info-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--info-alt);
     color: white;
 }
 
-.btn-warning-light-invert ~ .dropdown-menu .dropdown-item.active {
-    background: var(--warning-invert);
+.btn-warning-light-alt ~ .dropdown-menu .dropdown-item.active {
+    background: var(--warning-alt);
     color: white;
 }
 
