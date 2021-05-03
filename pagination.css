@@ -1,8 +1,8 @@
 .pagination {
     list-style: none;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -102,9 +102,9 @@
 
 .breadcrumb {
     list-style: none;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -257,5 +257,16 @@
         min-width: auto;
         min-height: auto;
         font-size: 13px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .page-link {
+        padding: 3px 10px !important;
+    }
+    .pagination-seprate  .page-item,.breadcrumb-seprate .breadcrumb-item {
+        margin-bottom: 10px;
+    }
+    .pagination,.breadcrumb {
+        flex-wrap: wrap;
     }
 }

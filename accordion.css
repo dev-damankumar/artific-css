@@ -5,7 +5,12 @@
     position: relative;
     padding-right: 50px;
 }
-
+.accordion-link {
+    color: var(--dark);
+}
+.accordion-link:hover {
+    color: var(--dark-alt);
+}
 .accordion-separate .accordion-header {
     -moz-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
@@ -75,12 +80,10 @@
 .accordion-panel {
     margin-top: 0;
     padding: 15px;
-
     margin-bottom: 20px;
     border-radius: 0 0 10px 10px;
     display: none;
 }
-
 .accordion {
     margin-bottom: 10px;
 }

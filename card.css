@@ -4,7 +4,7 @@
     -webkit-box-shadow:0 0 32px rgba(0 ,0 ,0, 0.08);
     box-shadow: 0 0 32px rgba(0 ,0 ,0, 0.08);
     border-radius: 10px;
-    padding: 20px 10px;
+    padding:10px;
     position: relative;
     -webkit-transition: ease-in-out .3s;
     -o-transition: ease-in-out .3s;
@@ -54,4 +54,10 @@
 .card.card-center .card-btn {
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .card-title {
+        font-size: 16px;
+    }
 }

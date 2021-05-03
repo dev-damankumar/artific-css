@@ -1,0 +1,60 @@
+:root {
+    --primary: #3d5af1;
+    --secondary: #673ab7;
+    --success: #17b978;
+    --danger: #ff304f;
+    --info: #00d1ff;
+    --warning: #f9826c;
+    --light:#fff;
+    --dark:#303a52;
+
+    --primary-light: #eaedff;
+    --secondary-light: #ddcaff;
+    --success-light: #d8f8eb;
+    --danger-light: #ffe1e5;
+    --info-light: #e1faff;
+    --warning-light: #fae5dd;
+
+
+    --primary-alt-light: #eeeaff;
+    --secondary-alt-light: #e1e1e1;
+    --success-alt-light: #d5fff7;
+    --danger-alt-light: #ffe5ed;
+    --info-alt-light: #d8e1fa;
+    --warning-alt-light: #fae8da;
+
+    --primary-light-border: #d9defa;
+    --secondary-light-border: #c8aef8;
+    --success-light-border: #b4f2d8;
+    --danger-light-border: #facbd1;
+    --info-light-border: #a9e5f2;
+    --warning-light-border: #f6d5c9;
+
+
+    --primary-alt-light-border: #c5b9ff;
+    --secondary-alt-light-border: #cfcfcf;
+    --success-alt-light-border: #7bf8e1;
+    --danger-alt-light-border: #fab0c6;
+    --info-alt-light-border: #a0b6f0;
+    --warning-alt-light-border: #f9cfae;
+
+
+    --primary-alt: #9884f4;
+    --secondary-alt: #fbfae1;
+    --success-alt: #21e6c1;
+    --danger-alt: #fc5185;
+    --info-alt: #5068a9;
+    --warning-alt: #ffa45c;
+    --light-alt:#ecfffb;
+    --dark-alt:#000;
+
+    --primary-alt-text: #131119;
+    --secondary-alt-text: #131119;
+    --success-alt-text: #071e3d;
+    --danger-alt-text: #300915;
+    --info-alt-text: #0c1221;
+    --warning-alt-text: #472001;
+    --light-alt-text:#060608;
+    --dark-alt-text:#fff;
+
+}

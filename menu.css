@@ -93,11 +93,23 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+.navbar-brand img,.navbar-brand svg{
+    width: auto;
+    height: 50px;
+    max-width: 100%;
+}
 .menu-link {
     font-weight: 500;
     padding: 8px 15px;
     display: block;
     border-radius: 10px;
+    line-height: normal;
+    vertical-align: middle;
+}
+.menu-link svg, .menu-link img {
+    width: 30px;
+    height: 30px;
+
 }
 .navbar-close {
     display: none;
@@ -222,5 +234,16 @@
     .menu-item-right {
         margin-left: 0 !important;
         margin-top: auto !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .navbar-brand img, .navbar-brand svg {
+        height: 30px;
+    }
+    .menu-wrap{
+        width: 100%;
+    }
+    .navbar-close span {
+        width: 16px;
     }
 }

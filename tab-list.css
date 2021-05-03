@@ -49,11 +49,6 @@
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff;
 }
-.nav-tabs .nav-link {
-    border: 1px solid transparent;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
 
 .nav-tabs .nav-item {
     margin-bottom: -1px;
@@ -64,6 +59,7 @@
     border: 1px solid transparent;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    color: var(--dark);
 }
 .nav-tabs.nav-separate {
     border-bottom: 1px solid #eee;
@@ -140,4 +136,16 @@
 }
 .nav-vertical .nav-item {
     margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px){
+    .nav-tabs .nav-link {
+        padding: 5px 10px;
+    }
+    .tab-pane {
+        padding: 0;
+    }
+    .tab-wrap{
+        padding: 15px;
+    }
 }
