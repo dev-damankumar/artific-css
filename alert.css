@@ -9,6 +9,12 @@
     z-index: 9;
     border: 1px solid transparent;
 }
+.alert-heading {
+    color: inherit;
+}
+.alert-link:hover{
+    color:white;
+}
 .alert-dismissible{
     padding-right: 40px;
 }
@@ -45,9 +51,12 @@
 .alert *:last-child {
     margin-bottom: 0px;
 }
+.alert p{
+    margin-bottom: 0;
+}
 .alert-link {
     color: inherit;
-    font-weight: 700;
+    font-family: "Nunito SemiBold";
     text-decoration: underline;
 }
 .alert hr {

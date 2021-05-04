@@ -153,7 +153,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat Bold", sans-serif;
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     font-weight: 600;
     line-height: 1.2;
 }
@@ -519,7 +519,7 @@ progress {
 }
 
 hr {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     color: inherit;
     background-color: gray;
     border: 0;
@@ -626,7 +626,8 @@ dl, ol, ul {
 }
 
 .accordion-link {
-    color: var(--dark);
+    color: inherit;
+    font-family: "Nunito Bold",sans-serif;
 }
 
 .accordion-link:hover {
@@ -659,7 +660,8 @@ dl, ol, ul {
     right: 25px;
     width: 10px;
     height: 10px;
-    border: 2px solid #303a52;
+    border: 2px solid;
+    border-color: inherit;
     -webkit-transform: rotate(
             45deg
     ) translateY(-50%);
@@ -1200,7 +1202,15 @@ dl, ol, ul {
     z-index: 9;
     border: 1px solid transparent;
 }
-
+.alert p{
+    margin-bottom: 0;
+}
+.alert-heading {
+    color: inherit;
+}
+.alert-link:hover{
+    color:white;
+}
 .alert-dismissible {
     padding-right: 40px;
 }
@@ -1243,7 +1253,7 @@ dl, ol, ul {
 
 .alert-link {
     color: inherit;
-    font-weight: 700;
+    font-family: "Nunito SemiBold";
     text-decoration: underline;
 }
 
@@ -1764,7 +1774,7 @@ dl, ol, ul {
     border: 2px solid transparent;
     border-radius: 10px;
     display: inline-block;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -2383,6 +2393,17 @@ dl, ol, ul {
     transition: ease-in-out .3s;
     margin-bottom: 30px;
 }
+.card-extend {
+    padding: 0 !important;
+    overflow: hidden;
+}
+.btn:hover{
+    color: inherit;
+}
+.card > img {
+     width: 100%;
+     max-height: 500px;
+ }
 
 .card-img-div {
     max-width: 100%;
@@ -2404,8 +2425,11 @@ dl, ol, ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 10px;
 }
-
+.card-extend .card-body {
+    padding: 0 15px 15px !important;
+}
 .card-btn {
     border: none;
     margin: 0;
@@ -7559,23 +7583,23 @@ tr:last-child td:last-child {
     background-color: var(--light-alt-text) !important;
 }
 
-.table-success-light hr th {
+.table-success-light th {
     background-color: var(--success-light-border) !important;
 }
 
-.table-primary-light hrth {
+.table-primary-light th {
     background-color: var(--primary-light-border) !important;
 }
 
-.table-info-light hrth {
+.table-info-light th {
     background-color: var(--info-light-border) !important;
 }
 
-.table-danger-light hrth {
+.table-danger-light th {
     background-color: var(--danger-light-border) !important;
 }
 
-.table-warning-light hrth {
+.table-warning-light th {
     background-color: var(--warning-light-border) !important;
 }
 

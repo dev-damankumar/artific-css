@@ -6,7 +6,8 @@
     padding-right: 50px;
 }
 .accordion-link {
-    color: var(--dark);
+    color: inherit;
+    font-family: "Nunito SemiBold",sans-serif;
 }
 .accordion-link:hover {
     color: var(--dark-alt);
@@ -37,7 +38,8 @@
     right: 25px;
     width: 10px;
     height: 10px;
-    border: 2px solid #303a52;
+    border: 2px solid;
+    border-color: inherit;
     -webkit-transform: rotate(
             45deg
     ) translateY(-50%);
