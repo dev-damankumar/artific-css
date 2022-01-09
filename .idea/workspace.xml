@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:Dcss" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6147912a-2e6f-492d-9a58-66f4f700d3aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/accordion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/active.css" beforeDir="false" afterPath="$PROJECT_DIR$/active.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/color.css" beforeDir="false" afterPath="$PROJECT_DIR$/color.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="23SpSvaFtJVAYvrMYaiDNIlkKz6" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6147912a-2e6f-492d-9a58-66f4f700d3aa" name="Default Changelist" comment="" />
+      <created>1641737345243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641737345243</updated>
+      <workItem from="1641737346944" duration="10549000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1641738394377">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.816@0.0.1536.816" timestamp="1641738394377" />
+    <state x="583" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1641738390161">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="583" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1641738390161" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1641744679917">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1641744679917" />
+  </component>
+</project>

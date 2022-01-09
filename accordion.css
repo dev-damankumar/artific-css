@@ -1,9 +1,26 @@
+:root{
+	--accordion-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	--accordion-box-shadow-hover: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+	--accordion-border-radius: 5px;
+	--accordion-padding: 15px;
+	--accordion-font-size: 16px;
+	--accordion-margin: 10px;
+}
 .accordion-header {
-    padding: 15px;
-    border-radius: 10px;
+    padding: var(--accordion-padding);
+    border-radius: var(--accordion-border-radius);
     font-weight: 600;
     position: relative;
     padding-right: 50px;
+}
+.accordion-rounded {
+	--accordion-border-radius:10px;
+}
+.accordion-no-radius {
+	--accordion-border-radius:0px;
+}
+.accordion-pill .accordion-header {
+	--accordion-border-radius:50px;
 }
 .accordion-link {
     color: inherit;
@@ -13,15 +30,16 @@
     color: var(--dark-alt);
 }
 .accordion-separate .accordion-header {
-    -moz-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: var(--accordion-box-shadow);
+    -webkit-box-shadow: var(--accordion-box-shadow);
+    box-shadow: var(--accordion-box-shadow);
 }
 
 .accordion {
-    -moz-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 13px rgba(0, 0, 0, 0.1);
+	font-size: var(--accordion-font-size);
+    -moz-box-shadow: var(--accordion-box-shadow);
+    -webkit-box-shadow: var(--accordion-box-shadow);
+    box-shadow: var(--accordion-box-shadow);
     border-radius: 10px;
 }
 
@@ -35,9 +53,9 @@
     position: absolute;
     content: "";
     top: calc(50% - 5px);
-    right: 25px;
-    width: 10px;
-    height: 10px;
+    right: calc(var(--accordion-margin) + 15px);
+    width: calc(var(--accordion-font-size) - 6px);
+    height: calc(var(--accordion-font-size) - 6px);
     border: 2px solid;
     border-color: inherit;
     -webkit-transform: rotate(
@@ -51,6 +69,117 @@
     ) translateY(-50%);
     border-top: 0;
     border-left: 0;
+}
+.accordion-small{
+	--accordion-padding: 10px 13px;
+	--accordion-font-size:14px;
+	--accordion-margin:13px;
+}
+.accordion-extra-small{
+	--accordion-padding: 5px 8px;
+	--accordion-font-size:13px;
+	--accordion-margin:5px;
+}
+.accordion-large{
+	--accordion-padding: 20px;
+	--accordion-font-size:18px;
+	--accordion-margin:15px;
+}
+.accordion-extra-large{
+	--accordion-padding: 25px;
+	--accordion-font-size:20px;
+	--accordion-margin:20px;
+}
+@media (min-width: 576px) {
+	.accordion-sm-small{
+		--accordion-padding: 10px 13px;
+		--accordion-font-size:14px;
+		--accordion-margin:13px;
+	}
+	.accordion-sm-extra-small{
+		--accordion-padding: 5px 8px;
+		--accordion-font-size:13px;
+		--accordion-margin:5px;
+	}
+	.accordion-sm-large{
+		--accordion-padding: 20px;
+		--accordion-font-size:18px;
+		--accordion-margin:15px;
+	}
+	.accordion-sm-extra-large{
+		--accordion-padding: 25px;
+		--accordion-font-size:20px;
+		--accordion-margin:20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.accordion-md-small{
+		--accordion-padding: 10px 13px;
+		--accordion-font-size:14px;
+		--accordion-margin:13px;
+	}
+	.accordion-md-extra-small{
+		--accordion-padding: 5px 8px;
+		--accordion-font-size:13px;
+		--accordion-margin:5px;
+	}
+	.accordion-md-large{
+		--accordion-padding: 20px;
+		--accordion-font-size:18px;
+		--accordion-margin:15px;
+	}
+	.accordion-md-extra-large{
+		--accordion-padding: 25px;
+		--accordion-font-size:20px;
+		--accordion-margin:20px;
+	}
+}
+
+@media (min-width: 992px) {
+	.accordion-lg-small{
+		--accordion-padding: 10px 13px;
+		--accordion-font-size:14px;
+		--accordion-margin:13px;
+	}
+	.accordion-lg-extra-small{
+		--accordion-padding: 5px 8px;
+		--accordion-font-size:13px;
+		--accordion-margin:5px;
+	}
+	.accordion-lg-large{
+		--accordion-padding: 20px;
+		--accordion-font-size:18px;
+		--accordion-margin:15px;
+	}
+	.accordion-lg-extra-large{
+		--accordion-padding: 25px;
+		--accordion-font-size:20px;
+		--accordion-margin:20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.accordion-xl-small{
+		--accordion-padding: 10px 13px;
+		--accordion-font-size:14px;
+		--accordion-margin:13px;
+	}
+	.accordion-xl-extra-small{
+		--accordion-padding: 5px 8px;
+		--accordion-font-size:13px;
+		--accordion-margin:5px;
+	}
+	.accordion-xl-large{
+		--accordion-padding: 20px;
+		--accordion-font-size:18px;
+		--accordion-margin:15px;
+	}
+	.accordion-xl-extra-large{
+		--accordion-padding: 25px;
+		--accordion-font-size:20px;
+		--accordion-margin:20px;
+	}
 }
 
 .accordion-separate .accordion-panel {
@@ -69,9 +198,9 @@
 
 .accordion-separate .accordion-panel {
     margin-top: 20px;
-    padding: 15px;
+    padding: var(--accordion-padding);
     background: #f4f4f4;
-    border-radius: 10px;
+    border-radius: var(--accordion-border-radius);
     margin-bottom: 20px;
 }
 
@@ -81,9 +210,9 @@
 
 .accordion-panel {
     margin-top: 0;
-    padding: 15px;
+    padding: var(--accordion-padding);
     margin-bottom: 20px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--accordion-border-radius) var(--accordion-border-radius);
     display: none;
 }
 .accordion {

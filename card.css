@@ -1,74 +1,90 @@
+:root {
+	--card-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1);
+	--card-box-shadow-hover: 0 1px 13px rgba(0, 0, 0, 0.1);
+	--card-border-radius: 5px;
+	--card-padding: 10px;
+}
+
 .card {
-    background: #fff;
-    -moz-box-shadow:0 0 32px rgba(0 ,0 ,0, 0.08);
-    -webkit-box-shadow:0 0 32px rgba(0 ,0 ,0, 0.08);
-    box-shadow: 0 0 32px rgba(0 ,0 ,0, 0.08);
-    border-radius: 10px;
-    padding:10px;
-    position: relative;
-    -webkit-transition: ease-in-out .3s;
-    -o-transition: ease-in-out .3s;
-    transition: ease-in-out .3s;
-    margin-bottom: 30px;
+	background: #fff;
+	-moz-box-shadow: var(--card-box-shadow);
+	-webkit-box-shadow: var(--card-box-shadow);
+	box-shadow: var(--card-box-shadow);
+	border-radius: var(--card-border-radius);
+	padding: var(--card-padding);
+	position: relative;
+	-webkit-transition: ease-in-out .3s;
+	-o-transition: ease-in-out .3s;
+	transition: ease-in-out .3s;
+	margin-bottom: 30px;
+}
+.card:hover{
+	box-shadow: var(--card-box-shadow-hover);
+}
+.card-rounded{
+	--card-border-radius:10px;
 }
 .card > img {
-    width: 100%;
-    max-height: 500px;
+	width: 100%;
+	max-height: 500px;
 }
+
 .card-extend {
-    padding: 0 !important;
-    overflow: hidden;
+	padding: 0 !important;
+	overflow: hidden;
 }
+
 .card-extend .card-body {
-    padding: 0 15px 15px !important;
+	padding: 0 15px 15px !important;
 }
+
 .card-img-div {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .card-img-div img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .card-title {
-    color: #333;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 10px auto;
+	color: #333;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 10px auto;
 }
 
 .card-subtitle {
-    color: #505050;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 10px;
+	color: #505050;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 10px;
 }
 
 .card-btn {
-    border: none;
-    margin: 0;
-    padding: 7px 20px;
-    display: block;
-    border-radius: 8px;
-    font-size: 14px;
-    margin-top: 20px;
-    font-weight: 700;
-    color: #333;
-    cursor: pointer;
+	border: none;
+	margin: 0;
+	padding: 7px 20px;
+	display: block;
+	border-radius: 8px;
+	font-size: 14px;
+	margin-top: 20px;
+	font-weight: 700;
+	color: #333;
+	cursor: pointer;
 }
 
 .card.card-center {
-    text-align: center;
+	text-align: center;
 }
 
 .card.card-center .card-btn {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media screen and (max-width: 500px) {
-    .card-title {
-        font-size: 16px;
-    }
+	.card-title {
+		font-size: 16px;
+	}
 }
