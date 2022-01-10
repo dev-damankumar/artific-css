@@ -14,18 +14,18 @@
 }
 
 .active-outline.active-primary {
-    color: var(--primary) !important;
-    border-color: var(--primary) !important;
-    backgrouncolor: white !important;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    background: white !important;
 }
 
 .active-outline.active-light {
-    color: var(--light) !important;
-    border-color: var(--light) !important;
-    backgrouncolor: #000 !important;
+    color: var(--light-color) !important;
+    border-color: var(--light-color) !important;
+    background: #000 !important;
 }
 .active-outline.active-dark {
-    color: var(--dark)  !important;
-    border-color: var(--dark)  !important;
-    backgrouncolor: var(--light) !important;
+    color: var(--dark-color)  !important;
+    border-color: var(--dark-color)  !important;
+    background: var(--light) !important;
 }

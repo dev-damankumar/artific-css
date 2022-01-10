@@ -5,671 +5,163 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="../style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+          rel="stylesheet">
     <style>
-        .container{
-            margin-top: 50px;
-            margin-bottom: 50px;
+        :root {
+            --primary: #3d5af1;
+            --link-color: #3d59f0;
+            --light: #fff;
+            --dark: #303a52;
+        }
+    </style>
+    <link href="../grid.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet">
+    <link href="../alert.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        h5{
+            text-transform: capitalize;
+        }
+        .row {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Alerts</h1>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-4">
-            <h5>Main Colors</h5>
-            <div class="alert alert-primary alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-dark alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <h5>Alt Colors</h5>
-            <div class="alert alert-primary-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-light-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-dark-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <h5>Alt Colors Light Text</h5>
-            <div class="alert alert-primary-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-light-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-dark-alt alert-light-text alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-6">
-            <h5>Main Light Colors</h5>
-            <div class="alert alert-primary-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h5>Alt Light Colors</h5>
-            <div class="alert alert-primary-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-6">
-            <h5>Main Invert Colors</h5>
-            <div class="alert alert-primary-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-dark-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h5>Alt Invert Colors</h5>
-            <div class="alert alert-primary-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-light-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-dark-alt-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
+<section class="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Alerts</h5>
+                <div class="alert alert-primary alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-dark alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-light alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
 
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-6">
-            <h5>Main Light Invert Colors</h5>
-            <div class="alert alert-primary-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
             </div>
-            <div class="alert alert-secondary-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h5>Alt Light Invert Colors</h5>
-            <div class="alert alert-primary-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-secondary-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-success-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-info-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-danger-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-warning-alt-light-invert alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
+            <div class="col-md-6">
+                <h5>Alerts</h5>
+                <div class="alert alert-small alert-primary alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-dark alert-extra-large alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-light alert-extra-small alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-light alert-large  alert-dismissible">
+                    <button type="button" class="close" data-bs-dismiss="alert">&times</button>
+                    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-6">
-            <h5>Main Outline Colors</h5>
-            <div class="alert alert-outline-primary alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-secondary alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-info alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-warning alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-dark alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <h5>Alt Outline Colors</h5>
-            <div class="alert alert-outline-primary-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-secondary-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-success-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-info-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-danger-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-warning-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-light-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-dark-alt alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">&times;</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-6">
-            <h5>Alt Outline Light Colors</h5>
-            <div class="alert alert-outline-primary-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-secondary-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-success-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-info-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-danger-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-            <div class="alert alert-outline-warning-alt-light alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">×</button>
-                <h4 class="alert-heading">Well done!</h4>
-                <p>Aww yeah, you successfully read this important alert message. This example text</p>
-                <hr>
-                <p class="mb-0"><a href="#" class="alert-link">Click here</a> </p>
-            </div>
-        </div>
-    </div>
-</div>
+</section>
 </body>
+<script>
+	var getNextSibling = function (elem, selector) {
+		var sibling = elem.nextElementSibling;
+		while (sibling) {
+			if (sibling.matches(selector)) return sibling;
+			sibling = sibling.nextElementSibling
+		}
+	};
+	document.body.addEventListener("click",function (e) {
+
+		function resetDropdown(el) {
+			el.setAttribute("data-dropdown-open",false)
+			el.style.visibility="hidden"
+			el.style.opacity="0"
+			el.style.height="0px"
+			el.style.padding="0"
+		}
+		function resetMenu(el) {
+			el.setAttribute("data-menu-open",false)
+			el.style.right="-400px"
+		}
+
+		console.log(e.target)
+		if (e.target.getAttribute("data-toggle") === "dropdown" || e.target.closest(`[data-toggle="dropdown"]`)) {
+			/*dropdown*/
+			e.preventDefault()
+			var dropdown = e.target
+
+			if (e.target.closest(`[data-toggle="dropdown"]`)) {
+				dropdown = e.target.closest(`[data-toggle="dropdown"]`)
+			}
+
+			var dropdowns = [...document.querySelectorAll(`[data-dropdown-open]`)]
+			dropdowns.forEach(v => {
+				if (v.parentElement.querySelector(`[data-toggle="dropdown"]`) !== dropdown) {
+					console.log("vcjhn")
+					resetDropdown(v)
+				}
+			})
+			var dropdownMenu = getNextSibling(dropdown, ".dropdown-menu")
+			if (dropdownMenu) {
+				if (dropdownMenu.getAttribute("data-dropdown-open") == "true") {
+					resetDropdown(dropdownMenu)
+				} else {
+					dropdownMenu.setAttribute("data-dropdown-open", true)
+					dropdownMenu.style.height = dropdownMenu.scrollHeight + 5 + "px"
+					dropdownMenu.style.padding = "5px 0"
+					dropdownMenu.style.visibility = "visible"
+					dropdownMenu.style.opacity = "1"
+					setTimeout(() => {
+						dropdownMenu.style.overflow = "visible"
+					}, 300)
+				}
+			}
+		}
+
+		else if(e.target.getAttribute("data-toggle")==="menu" || e.target.closest(`[data-toggle="menu"]`)){
+			/*menu bar*/
+			e.preventDefault()
+			var toggleBtn=e.target
+			if(e.target.closest(`[data-toggle="menu"]`)){
+				toggleBtn=e.target.closest(`[data-toggle="menu"]`)
+			}
+
+			var menu=toggleBtn.parentElement.querySelector("[data-menu]")
+			if(menu){
+				if(menu.getAttribute("data-dropdown-open")=="true"){
+					resetMenu(menu)
+				}else{
+					menu.setAttribute("data-menu-open",true)
+					menu.style.right="0"
+				}
+			}
+		}
+		else{
+			var dropdowns=[...document.querySelectorAll(`[data-dropdown-open]`)]
+			dropdowns.forEach(v=>{
+				resetDropdown(v)
+			})
+			if(!e.target.closest(`[data-menu]`) || (e.target.hasAttribute(`[data-menu-close]`) || e.target.closest(`[data-menu-close]`))){
+				var menu=[...document.querySelectorAll(`[data-menu-open]`)]
+				menu.forEach(v=>{
+					resetMenu(v)
+				})
+			}
+		}
+	})
+
+	/* menu-open*/
+</script>
 </html>

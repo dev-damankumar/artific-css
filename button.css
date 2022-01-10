@@ -14,7 +14,7 @@
 	font-size: var(--btn-font-size);
 	background: #efefef;
 	padding: var(--btn-padding);
-	border: var(--btn-outline-width) solid transparent;
+	border: var(--btn-outline-width) solid none;
 	border-radius: var(--btn-border-radius);
 	display: inline-flex;
 	align-items: center;
@@ -175,16 +175,16 @@
 
 /*Button Colors*/
 .btn-primary {
-	background-color: var(--primary);
+	background: var(--primary);
 	color: white;
 }
 
 .btn-light {
-	background-color: var(--light);
+	background: var(--light);
 }
 
 .btn-dark {
-	background-color: var(--dark);
+	background: var(--dark);
 	color: white;
 }
 
@@ -197,23 +197,25 @@
 .btn-link:hover {
 	box-shadow: none !important;
 }
-
+.btn-outline{
+	border:var(--btn-outline-width) solid transparent;
+}
 .btn-outline.btn-primary {
-	color: var(--primary);
-	border-color: var(--primary);
-	background-color: white;
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+	background: white;
 }
 
 .btn-outline.btn-light {
-	color: var(--light);
-	border-color: var(--light);
-	background-color: var(--dark);
+	color: var(--light-color);
+	border-color: var(--light-color);
+	background: var(--dark);
 }
 
 .btn-outline.btn-dark {
-	color: var(--dark);
-	border-color: var(--dark);
-	background-color: var(--light);
+	color: var(--dark-color);
+	border-color: var(--dark-color);
+	background: var(--light);
 }
 
 /*Spinner*/
