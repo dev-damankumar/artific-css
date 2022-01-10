@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../variable.css" rel="stylesheet">
+    <link href="../grid.css" rel="stylesheet">
+    <link href="../main.css" rel="stylesheet">
+    <link href="../color.css" rel="stylesheet">
+    <link href="../button.css" rel="stylesheet">
+    <link href="../table.css" rel="stylesheet">
+    <link href="../form.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        section.sec {
+            background: url(m.jpg);
+            padding: 50px 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        section.sec * {
+            color: white;
+        }
+
+        .D-table-filter-div {
+            display: flex;
+        }
+
+        .D-table-customize-div {
+            padding: 10px;
+        }
+
+        .D-table-filter-item {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<section class="section">
+    <div class="table-wrap">
+        <div class="D-table-customize-div">
+            <div class="D-table-filter-div">
+                <div class="D-table-filter-item">
+                    <select class="form-control">
+                        <option>Choose Order</option>
+                        <option>Ascending</option>
+                        <option>Descending</option>
+                    </select>
+                </div>
+                <div class="D-table-filter-item">
+                    <select class="form-control">
+                        <option>Choose Row Count</option>
+                        <option>Show 10 Rows</option>
+                        <option>Show 20 Rows</option>
+                        <option>Show 30 Rows</option>
+                        <option>Show 40 Rows</option>
+                        <option>Show 50 Rows</option>
+                    </select>
+                </div>
+                <div class="D-table-filter-item">
+                    <div class="D-table-search-wrap">
+                        <input type="text" placeholder="Search..." class="form-control">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="table table-borderless table-striped table-success">
+                <thead class="dark-head">
+                <tr class="">
+                    <th class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </th>
+                    <th class="">
+                        <div class="">Id</div>
+                    </th>
+                    <th class="">
+                        <div class="">First Name</div>
+                    </th>
+                    <th class="">
+                        <div class="">Last Name</div>
+                    </th>
+                    <th class="">
+                        <div class="">Title</div>
+                    </th>
+                    <th class="">
+                        <div class="">Email</div>
+                    </th>
+                    <th class="">
+                        <div class="">Gender</div>
+                    </th>
+                    <th class="">
+                        <div class="">Ip Address</div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="">
+                    <td class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="">1</div>
+                    </td>
+                    <td class="">
+                        Daman
+                    </td>
+                    <td class="">
+                        <div class="">Kumar</div>
+                    </td>
+                    <td class="">
+                        <div class="">React Js</div>
+                    </td>
+                    <td class="">
+                        <div class="">damankumar@gmail.com</div>
+                    </td>
+                    <td class="">
+                        <div class="">Male</div>
+                    </td>
+                    <td class="">
+                        <div class="">123.344.555.666</div>
+                    </td>
+                </tr>
+                <tr class="">
+
+                    <td class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="">1</div>
+                    </td>
+                    <td class="">
+                        <div class="">Daman</div>
+                    </td>
+                    <td class="">
+                        <div class="">Kumar</div>
+                    </td>
+                    <td class="">
+                        <div class="">React Js</div>
+                    </td>
+                    <td class="">
+                        <div class="">damankumar@gmail.com</div>
+                    </td>
+                    <td class="">
+                        <div class="">Male</div>
+                    </td>
+                    <td class="">
+                        <div class="">123.344.555.666</div>
+                    </td>
+                </tr>
+                <tr class="">
+
+                    <td class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="">1</div>
+                    </td>
+                    <td class="">
+                        <div class="">Daman</div>
+                    </td>
+                    <td class="">
+                        <div class="">Kumar</div>
+                    </td>
+                    <td class="">
+                        <div class="">React Js</div>
+                    </td>
+                    <td class="">
+                        <div class="">damankumar@gmail.com</div>
+                    </td>
+                    <td class="">
+                        <div class="">Male</div>
+                    </td>
+                    <td class="">
+                        <div class="">123.344.555.666</div>
+                    </td>
+                </tr>
+                <tr class="">
+
+                    <td class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="">1</div>
+                    </td>
+                    <td class="">
+                        <div class="">Daman</div>
+                    </td>
+                    <td class="">
+                        <div class="">Kumar</div>
+                    </td>
+                    <td class="">
+                        <div class="">React Js</div>
+                    </td>
+                    <td class="">
+                        <div class="">damankumar@gmail.com</div>
+                    </td>
+                    <td class="">
+                        <div class="">Male</div>
+                    </td>
+                    <td class="">
+                        <div class="">123.344.555.666</div>
+                    </td>
+                </tr>
+                <tr class="">
+
+                    <td class="">
+                        <div class="D-table-custom-div">
+                            <label class="D-table-checkbox">
+                                <input type="checkbox" checked="checked D-table-check-row">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td class="">
+                        <div class="">1</div>
+                    </td>
+                    <td class="">
+                        <div class="">Daman</div>
+                    </td>
+                    <td class="">
+                        <div class="">Kumar</div>
+                    </td>
+                    <td class="">
+                        <div class="">React Js</div>
+                    </td>
+                    <td class="">
+                        <div class="">damankumar@gmail.com</div>
+                    </td>
+                    <td class="">
+                        <div class="">Male</div>
+                    </td>
+                    <td class="">
+                        <div class="">123.344.555.666</div>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="../dcss.js" defer></script>
+</html>

@@ -20,22 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6147912a-2e6f-492d-9a58-66f4f700d3aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/componants/dropdown.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/pagination.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/tab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/table.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accordion.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/accordion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/active.css" beforeDir="false" afterPath="$PROJECT_DIR$/active.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/alert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alert.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/button.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/componants/accordions.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/componants/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/alert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componants/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/button.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componants/card.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variable.css" beforeDir="false" afterPath="$PROJECT_DIR$/variable.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/pagination.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tab-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/tab-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/table.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="23SpSvaFtJVAYvrMYaiDNIlkKz6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -73,7 +74,7 @@
       <updated>1641737345243</updated>
       <workItem from="1641737346944" duration="10549000" />
       <workItem from="1641785895569" duration="14172000" />
-      <workItem from="1641800931650" duration="1991000" />
+      <workItem from="1641800931650" duration="11147000" />
     </task>
     <servers />
   </component>
