@@ -12,6 +12,7 @@
     font-weight: 600;
     position: relative;
     padding-right: 50px;
+	cursor: pointer;
 }
 .accordion-rounded {
 	--accordion-border-radius:10px;

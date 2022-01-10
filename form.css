@@ -941,7 +941,58 @@ select.form-control {
 .input-dark::-webkit-slider-thumb {
 	background: var(--dark) !important;
 }
-
+.form-file-group {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.form-file-control input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	opacity: 0;
+}
+.form-file-control {
+	border: var(--input-outline-width) dashed #dcdcdc;
+	border-radius:  var(--input-border-radius);
+	width: calc(var(--input-font-size) * 8);
+	height: calc(var(--input-font-size) * 8);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: var(--input-margin);
+}
+.form-file-control:before {
+	content: "+";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(var(--input-font-size) + 14px);;
+	height: calc(var(--input-font-size) + 14px);;
+	background: #dcdcdc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	font-size: calc(var(--input-font-size) + 4px);
+	font-weight: 600;
+	transform: translate(-50%,-50%);
+}
+.form-file-group img {
+	width: calc(var(--input-font-size) * 8);
+	height: calc(var(--input-font-size) * 8);
+	object-fit: cover;
+	border-radius: var(--input-border-radius);
+	margin-right:  var(--input-margin);
+	margin-bottom:  var(--input-margin) !important;
+	box-shadow:  var(--input-box-shadow);
+}
 @media screen and (max-width: 500px) {
 	.form {
 		padding: 30px 15px;

@@ -9,7 +9,7 @@
     <link href="../main.css" rel="stylesheet">
     <link href="../grid.css" rel="stylesheet">
     <link href="../button.css" rel="stylesheet">
-    <link href="../card.css" rel="stylesheet">
+    <link href="../accordion.css" rel="stylesheet">
     <style>
         .col-md-12{
             margin-bottom: 20px;
@@ -21,201 +21,64 @@
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Card</h1>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-12">
-            <h5>Card Default</h5>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
+<section class="section container">
+    <div class="accordion-wrap accordion-separate">
+        <div class="accordion open" data-accordion>
+            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                <a class="accordion-link">
+                    Is you.accordion-panelr team updated with latest web technical skills?
+                </a>
+            </div>
+            <div class="accordion-panel" >
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
 
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
+        <div class="accordion" data-accordion>
+            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                <a class="collapsed accordion-link">
+                    Which tools and technologies you use while developing websites?
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
 
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
+        <div class="accordion" data-accordion>
+            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                    How much efficient and experienced are your developers?
+                </a>
             </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row" style="margin-top: 30px;">
-        <div class="col-md-12">
-            <h5>Card Extend</h5>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 col-12">
-            <div class="card card-extend">
-                <div class="card-img-div">
-                    <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png" alt="Card image">
-
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-subtitle">Ui Designer</p>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, voluptatum?</p>
-                    <a href="#" class="btn btn-success btn-small">See Profile</a>
+            <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                    iure omnis reprehenderit sequi unde.
                 </div>
             </div>
         </div>
 
     </div>
-</div>
+</section>
 </body>
+<script src="../dcss.js" defer></script>
 </html>

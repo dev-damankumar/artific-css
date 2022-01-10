@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../main.css" rel="stylesheet"/>
+    <link href="../variable.css" rel="stylesheet"/>
+    <link href="../button.css" rel="stylesheet"/>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="../modal.css" rel="stylesheet"/>
+    <script src="../dcss.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+<button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+<div class="modal" id="id">
+    <div class="modal-content" data-modal-content="sm">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
