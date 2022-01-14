@@ -38,9 +38,6 @@
 .alert-heading {
     color: inherit;
 }
-.alert-link:hover{
-    color:white;
-}
 .alert-dismissible{
     padding-right: 40px;
 }
