@@ -8,3 +8,515 @@
 	--dark-color: var(--dark);
 	--link-color: #3d59f0;
 }
+
+@font-face {
+	font-family: SegoeUI Light;
+	src: local("Segoe UI Light"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+	font-weight: 100
+}
+
+@font-face {
+	font-family: SegoeUI Semilight;
+	src: local("Segoe UI Semilight"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semilight/latest.ttf) format("truetype");
+	font-weight: 200
+}
+
+@font-face {
+	font-family: SegoeUI;
+	src: local("Segoe UI"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+	font-weight: 400
+}
+
+@font-face {
+	font-family: SegoeUI Bold;
+	src: local("Segoe UI Bold"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+	font-weight: 600
+}
+
+@font-face {
+	font-family: "Montserrat Bold";
+	src: local("Segoe UI Semibold"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/semibold/latest.ttf) format("truetype");
+	font-weight: 700
+}
+@font-face {
+	font-family: "Montserrat Bold";
+	src: local("Montserrat Bold"), url(fonts/Montserrat-Bold.ttf) format("truetype");
+	font-weight: 100
+}
+@font-face {
+	font-family: "Montserrat";
+	src: local("Montserrat"), url(fonts/Montserrat-Regular.ttf) format("truetype");
+	font-weight: 100
+}
+
+@font-face {
+	font-family: "Nunito Sans";
+	src: local("Nunito Sans"), url(fonts/Nunito-Regular.ttf) format("truetype");
+	font-weight: 100
+}
+@font-face {
+	font-family: "Nunito SemiBold";
+	src: local("Nunito SemiBold"), url(fonts/Nunito-SemiBold.ttf) format("truetype");
+	font-weight: 100
+}
+@font-face {
+	font-family: "Nunito Bold";
+	src: local("Nunito Bold"), url(fonts/Nunito-Bold.ttf) format("truetype");
+	font-weight: 100
+}
+*, ::after, ::before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-moz-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	outline: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+	:root {
+		scroll-behavior: smooth;
+	}
+}
+
+html, body {
+	margin: 0;
+	font-family: 'Nunito Sans', sans-serif , system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	line-height: 1.5;
+	font-size: 16px;
+	font-weight: 400;
+	-webkit-text-size-adjust: 100%;
+	background-color: #fff;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	color: #303a52;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Montserrat Bold", sans-serif;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+}
+
+h2 {
+	font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+	h3 {
+		font-size: 1.75rem;
+	}
+}
+
+h4 {
+	font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+	h4 {
+		font-size: 1.5rem;
+	}
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+abbr[title],
+abbr[data-bs-original-title] {
+	-webkit-text-decoration: underline dotted;
+	text-decoration: underline dotted;
+	cursor: help;
+	-webkit-text-decoration-skip-ink: none;
+	text-decoration-skip-ink: none;
+}
+
+address {
+	margin-bottom: 1rem;
+	font-style: normal;
+	line-height: inherit;
+}
+
+ol,
+ul {
+	padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+	margin-bottom: 0;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+}
+
+blockquote {
+	margin: 0 0 1rem;
+}
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+small {
+	font-size: 0.875em;
+}
+
+mark {
+	padding: 0.2em;
+	background-color: #fcf8e3;
+}
+
+sub,
+sup {
+	position: relative;
+	font-size: 0.75em;
+	line-height: 0;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+pre,
+code,
+kbd,
+samp {
+	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-size: 1em;
+	direction: ltr /* rtl:ignore */;
+	unicode-bidi: bidi-override;
+}
+
+pre {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	overflow: auto;
+	font-size: 0.875em;
+}
+pre code {
+	font-size: inherit;
+	color: inherit;
+	word-break: normal;
+}
+
+code {
+	font-size: 0.875em;
+	color: #d63384;
+	word-wrap: break-word;
+}
+a > code {
+	color: inherit;
+}
+
+kbd {
+	padding: 0.2rem 0.4rem;
+	font-size: 0.875em;
+	color: #fff;
+	background-color: #212529;
+	border-radius: 0.2rem;
+}
+kbd kbd {
+	padding: 0;
+	font-size: 1em;
+	font-weight: 700;
+}
+
+figure {
+	margin: 0 0 1rem;
+}
+table {
+	caption-side: bottom;
+	border-collapse: collapse;
+}
+
+caption {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	color: #6c757d;
+	text-align: left;
+}
+
+th {
+	text-align: inherit;
+	text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+	border-color: inherit;
+	border-style: solid;
+	border-width: 0;
+}
+
+label {
+	display: inline-block;
+}
+
+button {
+	border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+	outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+[role=button] {
+	cursor: pointer;
+}
+
+select {
+	word-wrap: normal;
+}
+select:disabled {
+	opacity: 1;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+	-webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+	padding: 0;
+	border-style: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+fieldset {
+	min-width: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+legend {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin-bottom: 0.5rem;
+	font-size: calc(1.275rem + 0.3vw);
+	line-height: inherit;
+}
+@media (min-width: 1200px) {
+	legend {
+		font-size: 1.5rem;
+	}
+}
+legend + * {
+	clear: left;
+}
+
+::-webkit-datetime-edit-fields-wrapper,
+::-webkit-datetime-edit-text,
+::-webkit-datetime-edit-minute,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-year-field {
+	padding: 0;
+}
+
+::-webkit-inner-spin-button {
+	height: auto;
+}
+
+[type=search] {
+	outline-offset: -2px;
+	-webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+::file-selector-button {
+	font: inherit;
+}
+
+::-webkit-file-upload-button {
+	font: inherit;
+	-webkit-appearance: button;
+}
+
+output {
+	display: inline-block;
+}
+
+iframe {
+	border: 0;
+}
+
+summary {
+	display: list-item;
+	cursor: pointer;
+}
+
+progress {
+	vertical-align: baseline;
+}
+
+[hidden] {
+	display: none !important;
+}
+hr {
+	margin: 0.5rem 0;
+	color: inherit;
+	background-color: gray;
+	border: 0;
+}
+hr:not([size]) {
+	height: 1px;
+}
+img,
+svg {
+	vertical-align: middle;
+}
+svg {
+	vertical-align: middle;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+	outline: 0 !important
+}
+
+input:focus{
+	outline: none;
+}
+button {
+	font-family: 'Nunito Sans', sans-serif;
+	outline: none;
+	cursor: pointer;
+}
+
+.section {
+	padding: 50px 0;
+}
+
+
+a {
+	text-decoration: none;
+	color: var(--primary);
+}
+a:hover {
+	color: #0a58ca;
+}
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+	color: inherit;
+	text-decoration: none;
+}
+dl, ol, ul {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+.thumbnail {
+	padding: 5px;
+	-moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow:0px 1px 13px rgba(0, 0, 0, 0.10);
+	box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.10);
+}
+.rounded-image {
+	border-radius: 10px;
+}
+.circle-image {
+	border-radius: 50%;
+}
+.jumbotron {
+	-moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.10);
+	box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.10);
+	padding: 30px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+.jumbotron:last-child, .jumbotron:last-child *:last-child {
+	margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+	.section {
+		padding: 30px 0;
+	}
+}

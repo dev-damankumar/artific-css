@@ -20,6 +20,22 @@
 	visibility: hidden;
 	font-size: 13px;
 }
+[data-tooltip]{
+	position: relative;
+}
+[data-tooltip]:hover .tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+.tooltip:before {
+	content: "";
+	border-width: 7px;
+	border-style: solid;
+	border-color: transparent transparent var(--tooltip-background) transparent;
+	position: absolute;
+	top: -14px;
+	left: 15px;
+}
 .tooltip-dark{
 	--tooltip-background: var(--dark-color);
 	--tooltip-color:white;
@@ -39,22 +55,6 @@
 	top: 50%;
 	transform: translateY(-50%);
 }
-[data-tooltip]{
-	position: relative;
-}
-[data-tooltip]:hover .tooltip {
-	opacity: 1;
-	visibility: visible;
-}
-.tooltip:before {
-	content: "";
-	border-width: 7px;
-	border-style: solid;
-	border-color: transparent transparent var(--tooltip-background) transparent;
-	position: absolute;
-	top: -14px;
-	left: 15px;
-}
 .tooltip-up:before{
 	bottom: -14px;
 	top: unset;
@@ -71,4 +71,165 @@
 	top: 6px;
 	left: unset;
 	right: -13px;
+}
+
+
+@media (min-width: 576px) {
+	.tooltip-sm-dark{
+		--tooltip-background: var(--dark-color);
+		--tooltip-color:white;
+	}
+	.tooltip-sm-up{
+		bottom: calc(100% + 10px);
+		top: unset;
+	}
+	.tooltip-sm-right {
+		left: calc(100% + 10px);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-sm-left {
+		right: calc(100% + 10px);
+		left: unset;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-sm-up:before{
+		bottom: -14px;
+		top: unset;
+		border-color: var(--tooltip-background) transparent transparent transparent;
+	}
+	.tooltip-sm-right:before {
+		border-color: transparent var(--tooltip-background) transparent transparent;
+		top: 6px;
+		left: -13px;
+	}
+
+	.tooltip-sm-left:before {
+		border-color: transparent transparent transparent var(--tooltip-background);
+		top: 6px;
+		left: unset;
+		right: -13px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.tooltip-md-dark{
+		--tooltip-background: var(--dark-color);
+		--tooltip-color:white;
+	}
+	.tooltip-md-up{
+		bottom: calc(100% + 10px);
+		top: unset;
+	}
+	.tooltip-md-right {
+		left: calc(100% + 10px);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-md-left {
+		right: calc(100% + 10px);
+		left: unset;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-md-up:before{
+		bottom: -14px;
+		top: unset;
+		border-color: var(--tooltip-background) transparent transparent transparent;
+	}
+	.tooltip-md-right:before {
+		border-color: transparent var(--tooltip-background) transparent transparent;
+		top: 6px;
+		left: -13px;
+	}
+
+	.tooltip-md-left:before {
+		border-color: transparent transparent transparent var(--tooltip-background);
+		top: 6px;
+		left: unset;
+		right: -13px;
+	}
+
+}
+
+@media (min-width: 992px) {
+	.tooltip-lg-dark{
+		--tooltip-background: var(--dark-color);
+		--tooltip-color:white;
+	}
+	.tooltip-lg-up{
+		bottom: calc(100% + 10px);
+		top: unset;
+	}
+	.tooltip-lg-right {
+		left: calc(100% + 10px);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-lg-left {
+		right: calc(100% + 10px);
+		left: unset;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-lg-up:before{
+		bottom: -14px;
+		top: unset;
+		border-color: var(--tooltip-background) transparent transparent transparent;
+	}
+	.tooltip-lg-right:before {
+		border-color: transparent var(--tooltip-background) transparent transparent;
+		top: 6px;
+		left: -13px;
+	}
+
+	.tooltip-lg-left:before {
+		border-color: transparent transparent transparent var(--tooltip-background);
+		top: 6px;
+		left: unset;
+		right: -13px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.tooltip-xl-dark{
+		--tooltip-background: var(--dark-color);
+		--tooltip-color:white;
+	}
+	.tooltip-xl-up{
+		bottom: calc(100% + 10px);
+		top: unset;
+	}
+	.tooltip-xl-right {
+		left: calc(100% + 10px);
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-xl-left {
+		right: calc(100% + 10px);
+		left: unset;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.tooltip-xl-up:before{
+		bottom: -14px;
+		top: unset;
+		border-color: var(--tooltip-background) transparent transparent transparent;
+	}
+	.tooltip-xl-right:before {
+		border-color: transparent var(--tooltip-background) transparent transparent;
+		top: 6px;
+		left: -13px;
+	}
+
+	.tooltip-xl-left:before {
+		border-color: transparent transparent transparent var(--tooltip-background);
+		top: 6px;
+		left: unset;
+		right: -13px;
+	}
+
 }
