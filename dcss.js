@@ -15,21 +15,21 @@ document.body.addEventListener("click", function (e) {
 		el.style.visibility = "hidden"
 		dropdown.classList.remove("dropdown-open")
 	}
-	
+
 	function resetMenu(el) {
 		el.setAttribute("data-menu-open", false)
 		el.style.right = "-400px"
 	}
-	
+
 	if (e.target.getAttribute("data-toggle") === "dropdown" || e.target.closest(`[data-toggle="dropdown"]`)) {
 		/*dropdown*/
 		e.preventDefault()
 		var dropdown = e.target
-		
+
 		if (e.target.closest(`[data-toggle="dropdown"]`)) {
 			dropdown = e.target.closest(`[data-toggle="dropdown"]`)
 		}
-		
+
 		var dropdowns = [...document.querySelectorAll(`[data-dropdown-open]`)]
 		dropdowns.forEach(v => {
 			if (v.parentElement.querySelector(`[data-toggle="dropdown"]`) !== dropdown) {
@@ -63,12 +63,12 @@ document.body.addEventListener("click", function (e) {
 			})
 		}
 	}
-	
-	
+
+
 	if (e.target.getAttribute("data-toggle") === "modal" || e.target.closest(`[data-toggle="modal"]`)) {
 		e.preventDefault()
 		var modalBtn = e.target
-		
+
 		if (e.target.closest(`[data-toggle="modal"]`)) {
 			modalBtn = e.target.closest(`[data-toggle="modal"]`)
 		}
@@ -80,16 +80,17 @@ document.body.addEventListener("click", function (e) {
 	if (e.target.getAttribute("data-dismiss") === "modal" || e.target.closest(`[data-dismiss="modal"]`)) {
 		e.preventDefault()
 		var closeBtn = e.target
-		
+
 		if (e.target.closest(`[data-dismiss="modal"]`)) {
 			closeBtn = e.target.closest(`[data-dismiss="modal"]`)
 		}
 		closeBtn.closest(".modal").classList.remove("modal-show")
 	}
+
 	if (e.target.getAttribute("data-dismiss") === "alert" || e.target.closest(`[data-dismiss="alert"]`)) {
 		e.preventDefault()
 		var closeBtn = e.target
-		
+
 		if (e.target.closest(`[data-dismiss="alert"]`)) {
 			closeBtn = e.target.closest(`[data-dismiss="alert"]`)
 		}
@@ -98,18 +99,18 @@ document.body.addEventListener("click", function (e) {
 	if (e.target.getAttribute("data-toggle") === "menu" || e.target.closest(`[data-toggle="menu"]`)) {
 		e.preventDefault()
 		var menuToggleBtn = e.target
-		
+
 		if (e.target.closest(`[data-toggle="menu"]`)) {
 			menuToggleBtn = e.target.closest(`[data-toggle="menu"]`)
 		}
 		let menu = menuToggleBtn.parentElement.querySelector("[data-menu]")
 		menu.classList.add("menu-open")
 	}
-	
+
 	if (e.target.getAttribute("data-toggle") === "accordion" || e.target.closest(`[data-toggle="accordion"]`)) {
 		e.preventDefault()
 		var accordionHeader = e.target
-		
+
 		if (e.target.closest(`[data-toggle="accordion"]`)) {
 			accordionHeader = e.target.closest(`[data-toggle="accordion"]`)
 		}
@@ -119,25 +120,25 @@ document.body.addEventListener("click", function (e) {
 			if (v !== accordion) {
 				v.classList.remove("open")
 			}
-			
+
 		})
-		
+
 		accordion.classList.toggle("open")
-		
+
 	}
-	
+
 	if (e.target.getAttribute("data-toggle") === "tab" || e.target.closest(`[data-toggle="tab"]`)) {
 		e.preventDefault()
 		var tab = e.target
-		
+
 		if (e.target.closest(`[data-toggle="tab"]`)) {
 			tab = e.target.closest(`[data-toggle="tab"]`)
 		}
-		
+
 		let id = tab.getAttribute("href")
 		console.log("id", id)
 		let tabContent = document.querySelector(id)
-		
+
 		let previousOpened = [...document.querySelectorAll(".tab-open")]
 		previousOpened.forEach(v => {
 			if (v !== tabContent) {
@@ -152,19 +153,19 @@ document.body.addEventListener("click", function (e) {
 		})
 		tab.closest(".nav-item").classList.add("active")
 		tabContent.classList.add("tab-open")
-		
+
 	}
-	
+
 	if (e.target.getAttribute("data-menu-close") || e.target.closest(`[data-menu-close]`)) {
 		e.preventDefault()
 		var menuCloseBtn = e.target
-		
+
 		let menu = menuCloseBtn.closest("[data-menu]")
 		menu.classList.remove("menu-open")
 	}
 	if (e.target.classList.contains("modal")) {
 		e.preventDefault()
-		
+
 		if (e.target.getAttribute("data-dismiss-self")) {
 			e.target.classList.remove("modal-show")
 		} else {
@@ -173,7 +174,7 @@ document.body.addEventListener("click", function (e) {
 				e.target.classList.remove("shake")
 			}, 500)
 		}
-		
+
 	}
 })
 

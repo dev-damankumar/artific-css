@@ -94,7 +94,7 @@ tr:last-child td:last-child {
 
 .table-extra-small {
 	--table-padding: 5px;
-	--table-font-size: 14px;
+	--table-font-size: 13px;
 }
 
 
@@ -186,8 +186,6 @@ tr:last-child td:last-child {
 
 }
 
-
-
 .table-responsive {
 	overflow: auto;
 }
@@ -224,20 +222,20 @@ tr:last-child td:last-child {
 .table-outline-primary th {
 	color: var(--primary-color) !important;
 	border-color: var(--primary-color) !important;
-	background-color: white !important;
+	background: white !important;
 }
 
 
 .table-outline-light th {
 	color: var(--light-color) !important;
 	border-color: var(--light-color) !important;
-	background-color: #000 !important;
+	background: #000 !important;
 }
 
 .table-outline-dark th {
 	color: var(--dark-color) !important;
 	border-color: var(--dark-color) !important;
-	background-color: var(--light) !important;
+	background: var(--light) !important;
 }
 
 .table-primary-bg, .table-primary-bg td, .table-primary-bg th {
@@ -253,24 +251,6 @@ tr:last-child td:last-child {
 .table-dark-bg, .table-dark-bg td, .table-dark-bg th {
 	background: var(--dark) !important;
 	color: white !important;
-}
-
-.table-outline-primary-bg, .table-outline-primary-bg th, .table-outline-primary-bg td {
-	color: var(--primary-color) !important;
-	border-color: var(--primary-color) !important;
-	background-color: white !important;
-}
-
-.table-outline-light-bg, .table-outline-light-bg th, .table-outline-light-bg td {
-	color: var(--light-color) !important;
-	border-color: var(--light-color) !important;
-	background-color: #000 !important;
-}
-
-.table-outline-dark-bg, .table-outline-dark-bg th, .table-outline-dark-bg td {
-	color: var(--dark-color) !important;
-	border-color: var(--dark-color) !important;
-	background-color: var(--light) !important;
 }
 
 @media screen and (max-width: 500px) {

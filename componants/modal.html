@@ -14,33 +14,112 @@
     <link href="../modal.css" rel="stylesheet"/>
     <script src="../dcss.js" defer></script>
     <title>Document</title>
+    <style>
+        h3{
+            margin-bottom: 30px;
+        }
+        .row > div{
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 <div class="container">
+    <h3>Basic modal variants</h3>
     <div class="row">
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a1">Basic modal</button>
         </div>
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a2">Outside Click Close</button>
         </div>
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a3">Rounded Modal</button>
         </div>
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a4">No radius modal</button>
         </div>
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a5">Light modal</button>
         </div>
         <div class="col-md-2">
-            <button class="btn" data-toggle="modal" data-target="#id">Open modal</button>
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a6">Light modal blur overlay</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a7">Dark modal blur overlay</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a8">modal striped</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a9">modal striped body</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a10">modal striped header</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a11">modal striped footer</button>
+        </div>
+    </div>
+    <h3>Basic modal sizings</h3>
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a12">Modal Full</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a13">Modal Full Width</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a14">Modal Full height</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a15">Modal large content</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a16">Modal small content</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a17">Modal extra small content</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a18">Modal extra large content</button>
+        </div>
+    </div>
+    <h3>Basic modal docking</h3>
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a19">Modal left dock</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a20">Modal top dock</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a21">Modal bottom dock</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a22">Modal right dock</button>
+        </div>
+    </div>
+
+    <h3>Basic modal positions</h3>
+    <div class="row">
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a23">Modal left position</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a24">Modal top position</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a25">Modal bottom position</button>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-small" data-toggle="modal" data-target="#a26">Modal right position</button>
         </div>
     </div>
 </div>
 
-<div class="modal  modal-stripped-body modal-dock-top modal-full-width" id="id">
-    <div class="modal-content" data-modal-content="sm">
+<div class="modal" id="a1">
+    <div class="modal-content">
         <div class="modal-header">
             <h3>
                 <i class="bx bxs-trash"></i> Delete Project
@@ -58,5 +137,491 @@
         </div>
     </div>
 </div>
+<div class="modal modal-rounded" id="a3">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-no-radius" id="a4">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-light" id="a5">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-light modal-overlay-blur" id="a6">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="a2" data-dismiss-self="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-overlay-blur" id="a7">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-stripped" id="a8">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-stripped-body" id="a9">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-stripped-header" id="a10">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-stripped-footer" id="a11">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-full" id="a12">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-full-width" id="a13">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-full-height" id="a14">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal  " id="a15">
+    <div class="modal-large-content modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal " id="a16">
+    <div class="modal-content modal-small-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal " id="a17">
+    <div class="modal-content modal-extra-small-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal " id="a18">
+    <div class="modal-content modal-extra-large-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-dock-left" id="a19">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-dock-top" id="a20">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-dock-bottom" id="a21">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-dock-right" id="a22">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal modal-left" id="a23">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-top" id="a24">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-bottom" id="a25">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-right" id="a26">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>
+                <i class="bx bxs-trash"></i> Delete Project
+            </h3>
+            <span class="modal-close" data-dismiss="modal">×</span>
+        </div>
+        <div class="modal-body">
+            <p class="confirm-msg">Are you sure you want delete this project permanatly?</p>
+        </div>
+        <div class="modal-footer">
+            <div class="d-modal-button-div">
+                <button type="button" class="btn btn-small btn-primary">Delete</button>
+                <button class="btn btn-small btn-dark" type="reset" data-modal-close="">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

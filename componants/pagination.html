@@ -19,32 +19,284 @@
     <link href="../dropdown.css" rel="stylesheet">
     <title>Document</title>
     <style>
-        h5{
+        h5 {
             text-transform: capitalize;
         }
-        .row {
+
+        h3,h5{
+            margin-bottom: 30px;
+        }
+
+        .col-md-6 {
             margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
 <section class="section container">
-    <ul class="pagination pagination-extra-large pagination-rounded">
-        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item active"><a class="page-link " href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
+    <h3>Basic pagination Variant</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Basic variant</h5>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
 
-    <ul class="breadcrumb">
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
-        <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
-        <li class="breadcrumb-item active">Rome</li>
-    </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination rounded</h5>
+            <ul class="pagination pagination-rounded">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination no radius</h5>
+            <ul class="pagination pagination-no-radius">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination pill</h5>
+            <ul class="pagination pagination-pill">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6">
+            <h5>Basic pagination separate variant</h5>
+            <ul class="pagination pagination-separate">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination separate rounded</h5>
+            <ul class="pagination pagination-separate pagination-rounded">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination separate no radius</h5>
+            <ul class="pagination pagination-separate pagination-no-radius">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>Pagination separate pill</h5>
+            <ul class="pagination pagination-separate pagination-pill">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <h3>Pagination sizing</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Extra Small pagination</h5>
+            <ul class="pagination pagination-extra-small">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Small pagination</h5>
+            <ul class="pagination pagination-small">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Large pagination</h5>
+            <ul class="pagination pagination-large">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Extra large pagination</h5>
+            <ul class="pagination pagination-extra-large">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link " href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+
+        </div>
+    </div>
 </section>
+<section class="section container">
+    <h3>Basic breadcrumb Variant</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Basic variant</h5>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
 
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb rounded</h5>
+            <ul class="breadcrumb breadcrumb-rounded">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb no radius</h5>
+            <ul class="breadcrumb breadcrumb-no-radius">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb pill</h5>
+            <ul class="breadcrumb breadcrumb-pill">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h5>Basic breadcrumb separate variant</h5>
+            <ul class="breadcrumb breadcrumb-separate">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb separate rounded</h5>
+            <ul class="breadcrumb breadcrumb-separate breadcrumb-rounded">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb separate no radius</h5>
+            <ul class="breadcrumb breadcrumb-separate breadcrumb-no-radius">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h5>breadcrumb separate pill</h5>
+            <ul class="breadcrumb breadcrumb-separate breadcrumb-pill">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+        </div>
+    </div>
+    <h3> breadcrumb sizing</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>Extra Small breadcrumb</h5>
+            <ul class="breadcrumb breadcrumb-extra-small">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+
+        </div>
+
+        <div class="col-md-6">
+            <h5> Small breadcrumb</h5>
+            <ul class="breadcrumb breadcrumb-small">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>large breadcrumb</h5>
+            <ul class="breadcrumb breadcrumb-large">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+
+        </div>
+        <div class="col-md-6">
+            <h5>Extra large breadcrumb</h5>
+            <ul class="breadcrumb breadcrumb-extra-large">
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Photos</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Summer 2017</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="#">Italy</a></li>
+                <li class="breadcrumb-item active">Rome</li>
+            </ul>
+
+        </div>
+    </div>
+</section>
 </body>
 <script src="../dcss.js" defer></script>
 </html>
