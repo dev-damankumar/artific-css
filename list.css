@@ -53,6 +53,9 @@
 .list-striped,.list-striped:hover{
 	box-shadow: none;
 }
+.list-separate{
+	box-shadow: none;
+}
 .list-separate .list-group-item {
 	margin-bottom: calc(var(--list-margin) + 5px);
 	box-shadow: var(--list-box-shadow);

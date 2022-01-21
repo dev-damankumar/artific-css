@@ -9,14 +9,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
           rel="stylesheet">
-    <style>
-        :root {
-            --primary: #3d5af1;
-            --link-color: #3d59f0;
-            --light: #fff;
-            --dark: #303a52;
-        }
-    </style>
+    <link href="../variable.css" rel="stylesheet">
     <link href="../grid.css" rel="stylesheet">
     <link href="../main.css" rel="stylesheet">
     <link href="../alert.css" rel="stylesheet">
@@ -51,23 +44,46 @@
 
             </div>
             <div class="col-md-6">
-                <h5>Alerts</h5>
+                <h5>Alerts Sizes</h5>
+                <div class="alert alert-primary alert-extra-small alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times</button>
+                    <strong>Alert extra small</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
                 <div class="alert alert-small alert-primary alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert">&times</button>
-                    <strong>Primary!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                    <strong>Alert small</strong> You should <a href="#" class="alert-link">read this message</a>.
                 </div>
-                <div class="alert alert-dark alert-extra-large alert-dismissible">
+
+                <div class="alert alert-primary alert-large  alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert">&times</button>
-                    <strong>Dark!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                    <strong>Alert large</strong> You should <a href="#" class="alert-link">read this message</a>.
                 </div>
-                <div class="alert alert-light alert-extra-small alert-dismissible">
+                <div class="alert alert-primary alert-extra-large alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert">&times</button>
-                    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                    <strong>Alert extra large</strong> You should <a href="#" class="alert-link">read this message</a>.
                 </div>
-                <div class="alert alert-light alert-large  alert-dismissible">
+
+            </div>
+            <div class="col-md-6">
+                <h5>Alerts Variants</h5>
+                <div class="alert alert-primary alert-outline alert-dismissible">
                     <button type="button" class="close" data-dismiss="alert">&times</button>
-                    <strong>Light!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                    <strong>Alert extra small</strong> You should <a href="#" class="alert-link">read this message</a>.
                 </div>
+                <div class="alert alert-rounded alert-primary alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times</button>
+                    <strong>Alert small</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+
+                <div class="alert alert-primary alert-no-border  alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times</button>
+                    <strong>Alert large</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+                <div class="alert alert-primary alert-pill alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert">&times</button>
+                    <strong>Alert extra large</strong> You should <a href="#" class="alert-link">read this message</a>.
+                </div>
+
             </div>
         </div>
     </div>

@@ -15,7 +15,25 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
-
+.menu-small{
+    --menu-padding: 5px 10px;
+    --menu-font-size: 14px;
+}
+.menu-extra-small{
+    --menu-padding: 3px 5px;
+    --menu-font-size: 13px;
+    --menu-navbar-padding: 8px 10px;
+}
+.menu-large{
+    --menu-padding: 10px 15px;
+    --menu-font-size: 17px;
+    --menu-navbar-padding: 12px 30px;
+}
+.menu-extra-large{
+    --menu-padding: 15px 20px;
+    --menu-font-size: 18px;
+    --menu-navbar-padding: 15px 35px;
+}
 @media (min-width: 576px) {
 	.menu-sm-small{
 		--menu-padding: 5px 10px;
@@ -145,12 +163,12 @@
 		height: 20px;
 	}
 
-	.menux-xl-large{
+	.menu-xl-large{
 		--menu-padding: 10px 15px;
 		--menu-font-size: 17px;
 		--menu-navbar-padding: 12px 30px;
 	}
-	.menux-xl-large .navbar-brand img,.menu-small .navbar-brand svg {
+	.menu-xl-large .navbar-brand img,.menu-small .navbar-brand svg {
 		height: 35px;
 	}
 
@@ -179,7 +197,7 @@
     -ms-flex-align: center;
     align-items: center;
     padding: var(--menu-navbar-padding);
-    background: white;
+    background: #fbfbfb;
 }
 .menu-ul {
     display: -webkit-box;

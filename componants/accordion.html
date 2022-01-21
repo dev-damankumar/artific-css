@@ -11,72 +11,742 @@
     <link href="../button.css" rel="stylesheet">
     <link href="../accordion.css" rel="stylesheet">
     <style>
-        .col-md-12{
+        .col-md-6{
             margin-bottom: 20px;
         }
         .container{
             margin-top: 50px;
             margin-bottom: 50px;
         }
+        h1,h2,h3,h4,h5,h6{
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
 <section class="section container">
-    <div class="accordion-wrap accordion-separate">
-        <div class="accordion open" data-accordion>
-            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
-                <a class="accordion-link">
-                    Is you.accordion-panelr team updated with latest web technical skills?
-                </a>
-            </div>
-            <div class="accordion-panel" >
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Basic Accordions</h2>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion Basic</h5>
+            <div class="accordion-wrap">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
                 </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="accordion" data-accordion>
-            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
-                <a class="collapsed accordion-link">
-                    Which tools and technologies you use while developing websites?
-                </a>
-            </div>
-            <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
+        <div class="col-md-6">
+            <h5>Accordion Separate</h5>
+            <div class="accordion-wrap accordion-separate">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
                 </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <div class="accordion" data-accordion>
-            <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
-                <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
-                    How much efficient and experienced are your developers?
-                </a>
-            </div>
-            <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
-                <div class="accordion-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
-                    porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
-                    iure omnis reprehenderit sequi unde.
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Accordion  More Variants</h2>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion Basic Rounded</h5>
+            <div class="accordion-wrap accordion-rounded">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
                 </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+        <div class="col-md-6">
+            <h5>Accordion separate Rounded</h5>
+            <div class="accordion-wrap accordion-rounded accordion-separate">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
 
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion basic no radius</h5>
+            <div class="accordion-wrap accordion-no-radius">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion separate no radius</h5>
+            <div class="accordion-wrap accordion-no-radius accordion-separate">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion basic pill</h5>
+            <div class="accordion-wrap accordion-pill">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion separate pill</h5>
+            <div class="accordion-wrap accordion-pill accordion-separate">
+                <div class="accordion  open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2> Accordions Sizings</h2>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion Extra Small</h5>
+            <div class="accordion-wrap accordion-extra-small">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion  Small</h5>
+            <div class="accordion-wrap accordion-small">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion Large</h5>
+            <div class="accordion-wrap accordion-large">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h5>Accordion Extra Large</h5>
+            <div class="accordion-wrap accordion-extra-large">
+                <div class="accordion open" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="accordion-link">
+                            Is you.accordion-panelr team updated with latest web technical skills?
+                        </a>
+                    </div>
+                    <div class="accordion-panel" >
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link">
+                            Which tools and technologies you use while developing websites?
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" data-accordion>
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                            How much efficient and experienced are your developers?
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                        <div class="accordion-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
+                            porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
+                            iure omnis reprehenderit sequi unde.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
 </body>

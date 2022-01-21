@@ -21,9 +21,23 @@
   <component name="ChangeListManager">
     <list default="true" id="6147912a-2e6f-492d-9a58-66f4f700d3aa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/accordion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/alert.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/accordion.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/accordion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/button.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variable.css" beforeDir="false" afterPath="$PROJECT_DIR$/variable.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +63,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss\componants" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -71,7 +85,11 @@
       <workItem from="1641800931650" duration="11181000" />
       <workItem from="1641819547926" duration="10250000" />
       <workItem from="1641877641063" duration="30000" />
-      <workItem from="1642161579726" duration="4955000" />
+      <workItem from="1642161579726" duration="5164000" />
+      <workItem from="1642221138230" duration="598000" />
+      <workItem from="1642662097997" duration="13044000" />
+      <workItem from="1642737933522" duration="253000" />
+      <workItem from="1642749884757" duration="22000" />
     </task>
     <servers />
   </component>
@@ -103,9 +121,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="429" y="187" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1641827144708" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1642164511558">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1642674642855">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1642164511558" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1642674642855" />
   </component>
 </project>

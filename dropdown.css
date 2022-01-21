@@ -52,9 +52,6 @@
     -ms-transform: translateY(calc(-50% + 7px)) rotate(45deg);
     transform: translateY(calc(-50% + 7px)) rotate(45deg);
 }
-.navbar:not(.navbar-dark) .dropdown-toggle:before{
-    border-color: var(--dark);
-}
 
 .dropdown-toggle {
     padding-right: 33px !important;
@@ -150,33 +147,40 @@
 	--dropdown-min-width:250px;
 	--dropdown-max-height:250px;
 	--dropdown-margin:15px;
+}
+.dropdown-large.dropdown-fluid{
 	--dropdown-side-padding:8px;
 }
-
 .dropdown-extra-large {
 	--dropdown-padding: 10px 20px;
 	--dropdown-margin:15px;
 	--dropdown-font-size: 19px;
 	--dropdown-min-width:300px;
 	--dropdown-max-height:300px;
+}
+.dropdown-extra-large.dropdown-fluid{
 	--dropdown-side-padding:10px;
 }
-
 .dropdown-small {
 	--dropdown-padding: 5px 15px;
 	--dropdown-margin:5px;
 	--dropdown-font-size: 14px;
 	--dropdown-min-width:150px;
 	--dropdown-max-height:150px;
+
+}
+.dropdown-small.dropdown-fluid{
 	--dropdown-side-padding:5px;
 }
-
 .dropdown-extra-small {
 	--dropdown-margin:3px;
 	--dropdown-padding: 3px 10px;
 	--dropdown-font-size: 12px;
 	--dropdown-min-width:130px;
 	--dropdown-max-height:130px;
+
+}
+.dropdown-extra-small.dropdown-fluid{
 	--dropdown-side-padding:3px;
 }
 .dropdown-drawer .dropdown-menu:before {
@@ -313,7 +317,7 @@
 
 .btn-light ~ .dropdown-menu .dropdown-item.active {
     background: #f4f4f4;
-    color: var(--light-alt-text);
+    color: var(--dark-color);
 }
 
 .btn-dark ~ .dropdown-menu .dropdown-item.active {

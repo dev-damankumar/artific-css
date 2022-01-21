@@ -17,207 +17,716 @@
     <link href="../button.css" rel="stylesheet">
     <link href="../form.css" rel="stylesheet">
     <title>Document</title>
+    <style>
+        h3 {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
 <section class="section">
 
-    <form action="/action_page.php" class="form was-validated">
-        <h3>Login To Join</h3>
+    <form action="/action_page.php" class="container was-validated">
+        <h3>Basic Inputs</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Form Group primary</h5>
+                <div class="form-group form-group-primary">
+                    <label for="name">Name:</label>
+                   <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Group dark</h5>
+                <div class="form-group form-group-dark">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Group light</h5>
+                <div class="form-group form-group-light">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <h5>Form Group</h5>
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <h5>Form Group primary</h5>
+                <div class="form-group form-group-primary">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Group dark</h5>
+                <div class="form-group form-group-dark">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Group light</h5>
+                <div class="form-group form-group-light">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <h5>Form Group</h5>
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+        </div>
+        <h3>Basic Inputs Variants</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Form Fill</h5>
+                <div class="form-group form-fill">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Fill border</h5>
+                <div class="form-group form-fill form-fill-border">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form underline</h5>
+                <div class="form-group form-underline">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Floating</h5>
+                <div class="form-group form-floating">
+                    <p>&nbsp;</p>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <label for="name">Name:</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Cover</h5>
+                <div class="form-group form-cover">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Control Rounded</h5>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control form-control-rounded" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Control No radius</h5>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control form-control-no-radius" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Control pill</h5>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control form-control-pill" placeholder="Enter your name">
+                </div>
+            </div>
+        </div>
+        <h3>Basic Inputs Sizing</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Form Extra Small</h5>
+                <div class="form-group form-extra-small">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Small</h5>
+                <div class="form-group form-small">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Large</h5>
+                <div class="form-group form-large">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form extra large</h5>
+                <div class="form-group form-extra-large">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+        </div>
+        <h3>Basic Checkbox</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Basic Checkbox</h5>
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck">Primary</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck1">Dark</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck2">Light</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3" name="example1">
+                    <label class="custom-control-label" for="customCheck3">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Outline Checkbox</h5>
+                <div class="custom-control form-control-outline custom-checkbox ">
+                    <input type="checkbox" checked="" class=" custom-control-input " id="customCheck111" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck111">Primary</label>
+                </div>
+                <div class="custom-control form-control-outline custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck11" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck11">Dark</label>
+                </div>
+                <div class="custom-control form-control-outline custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck21" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck21">Light</label>
+                </div>
+                <div class="custom-control form-control-outline custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck31" name="example1">
+                    <label class="custom-control-label" for="customCheck31">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Checkbox Sizing</h5>
+                <div class="custom-control form-extra-small custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customChecks" name="example1">
+                    <label class="custom-control-label input-primary" for="customChecks">Extra Samll</label>
+                </div>
+                <div class="custom-control form-small custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1s">Small</label>
+                </div>
+                <div class="custom-control form-large custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2s">Large</label>
+                </div>
+                <div class="custom-control form-extra-large custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3s">Extra Large</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Checkbox Variant</h5>
+                <div class="custom-control form-control-rounded custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck">Rounded</label>
+                </div>
+                <div class="custom-control  form-control-no-radius custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1">No radius</label>
+                </div>
+                <div class="custom-control form-control-pill custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2">pill</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3">Default</label>
+                </div>
+            </div>
+        </div>
+        <h3>Basic Radio</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Basic Radio</h5>
+                <div class="custom-control custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck">Primary</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck1">Dark</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck2">Light</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3" name="example1">
+                    <label class="custom-control-label" for="customCheck3">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Outline Radio</h5>
+                <div class="custom-control form-control-outline custom-radio ">
+                    <input type="checkbox" checked="" class=" custom-control-input " id="customCheck111" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck111">Primary</label>
+                </div>
+                <div class="custom-control form-control-outline custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck11" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck11">Dark</label>
+                </div>
+                <div class="custom-control form-control-outline custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck21" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck21">Light</label>
+                </div>
+                <div class="custom-control form-control-outline custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck31" name="example1">
+                    <label class="custom-control-label" for="customCheck31">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Radio Sizing</h5>
+                <div class="custom-control form-extra-small custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customChecks" name="example1">
+                    <label class="custom-control-label input-primary" for="customChecks">Extra Samll</label>
+                </div>
+                <div class="custom-control form-small custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1s">Small</label>
+                </div>
+                <div class="custom-control form-large custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2s">Large</label>
+                </div>
+                <div class="custom-control form-extra-large custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3s" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3s">Extra Large</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Radio Variant</h5>
+                <div class="custom-control form-control-rounded custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck">Rounded</label>
+                </div>
+                <div class="custom-control  form-control-no-radius custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1">No radius</label>
+                </div>
+                <div class="custom-control form-control-pill custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2">pill</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3">Default</label>
+                </div>
+            </div>
+        </div>
+        <h3>Basic Switch</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Basic Switch</h5>
+                <div class="custom-control custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck8" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck8">Primary</label>
+                </div>
+                <div class="custom-control custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck18" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck18">Dark</label>
+                </div>
+                <div class="custom-control custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck28" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck28">Light</label>
+                </div>
+                <div class="custom-control custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck38" name="example1">
+                    <label class="custom-control-label" for="customCheck38">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Outline Switch</h5>
+                <div class="custom-control form-control-outline custom-switch ">
+                    <input type="checkbox" checked="" class=" custom-control-input " id="customCheck1116" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1116">Primary</label>
+                </div>
+                <div class="custom-control form-control-outline custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck116" name="example1">
+                    <label class="custom-control-label input-dark" for="customCheck116">Dark</label>
+                </div>
+                <div class="custom-control form-control-outline custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck216" name="example1">
+                    <label class="custom-control-label input-light" for="customCheck216">Light</label>
+                </div>
+                <div class="custom-control form-control-outline custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck316" name="example1">
+                    <label class="custom-control-label" for="customCheck316">Default</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic  Switch Sizing</h5>
+                <div class="custom-control form-extra-small custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customChecks1" name="example1">
+                    <label class="custom-control-label input-primary" for="customChecks1">Extra Samll</label>
+                </div>
+                <div class="custom-control form-small custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1s1" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1s1">Small</label>
+                </div>
+                <div class="custom-control form-large custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2s1" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2s1">Large</label>
+                </div>
+                <div class="custom-control form-extra-large custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3s1" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3s1">Extra Large</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Variants Switch</h5>
+                <div class="custom-control form-control-rounded custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheckss" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheckss">Rounded</label>
+                </div>
+                <div class="custom-control  form-control-no-radius custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck1ss" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck1ss">No radius</label>
+                </div>
+                <div class="custom-control form-control-pill custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck2ss" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck2ss">pill</label>
+                </div>
+                <div class="custom-control custom-switch ">
+                    <input type="checkbox" checked="" class="custom-control-input " id="customCheck3ss" name="example1">
+                    <label class="custom-control-label input-primary" for="customCheck3ss">Default</label>
+                </div>
+            </div>
+        </div>
+        <h3>Basic File Input</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Basic File Input</h5>
+                <div class="custom-file input-primary">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file input-dark">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file input-light">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Outline File Input</h5>
+                <div class="custom-file form-control-outline input-primary">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-control-outline input-dark">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-control-outline input-light">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-control-outline">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic File Input Sizing</h5>
+                <div class="custom-file form-extra-small input-primary">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-small input-dark">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-large input-light">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file form-extra-large">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Basic File Input Variant</h5>
+                <div class="custom-file input-primary form-control-rounded">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file input-dark form-control-no-radius">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file input-light form-control-pill">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+        </div>
+        <h3>Custom File Input</h3>
         <div class="row">
             <div class="col-md-6">
+                <h5>Basic File Input</h5>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-dark">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-light">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
                 <div class="form-group">
                     <label class="" for="image">Select Profile Image:</label>
                     <div class="form-file-group">
                         <div class="form-file-control">
-                        <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
                         </div>
                         <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
-                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
-
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-group form-extra-small form-group-light">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                <h5>Basic Outline File Input</h5>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary form-control-outline">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-dark form-control-outline">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-light form-control-outline">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-6">
-                <div class="form-group form-large form-group-primary">
-                    <label for="email">URL:</label>
-                    <input type="url" class="form-control-pill form-control" placeholder="Enter email">
+                <h5>Basic File Input Sizing</h5>
+                <div class="form-group form-extra-small">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary ">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
+                <div class="form-group form-small">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group form-large">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
                 <div class="form-group form-extra-large">
-                    <label for="pwd">Week:</label>
-                    <input type="week" class="form-control-no-radius form-control" placeholder="Enter password">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>Basic File Input Variant</h5>
+                <div class="form-group form-control-rounded">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary ">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group form-control-no-radius">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary ">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
+                </div>
+                <div class="form-group form-control-pill">
+                    <label class="" for="image">Select Profile Image:</label>
+                    <div class="form-file-group">
+                        <div class="form-file-control input-primary ">
+                            <input type="file" name="image" id="image" accept="image/*" class="form-control" value="">
+                        </div>
+                        <img src="https://projectx-web-app.herokuapp.com\uploads\images\IMG_20211219_225251_455.webp">
+                    </div>
                 </div>
             </div>
         </div>
+        <h3>Basic Input Range</h3>
         <div class="row">
-            <div class="col-md-6">
-                <div class="form-group form-group-dark">
-                    <label for="email">Date:</label>
-                    <input type="date" class="form-control" placeholder="Enter email">
-                </div>
+            <div class="col-md-3">
+                <h5>Basic Input Range</h5>
+                <input type="range" class="input-primary custom-range" id="customRange">
+                <input type="range" class="input-dark custom-range" id="customRange">
+                <input type="range" class="input-light custom-range" id="customRange">
+                <input type="range" class="custom-range" id="customRange">
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="pwd">tel:</label>
-                    <input type="tel" class="form-control" placeholder="Enter password">
-                </div>
+            <div class="col-md-3">
+                <h5>Basic Outline Input Range</h5>
+                <input type="range" class="input-primary form-control-outline custom-range" id="customRange">
+                <input type="range" class="input-dark form-control-outline custom-range" id="customRange">
+                <input type="range" class="input-light form-control-outline custom-range" id="customRange">
+                <input type="range" class="custom-range form-control-outline" id="customRange">
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Input Range Sizing</h5>
+                <input type="range" class="input-primary form-extra-small custom-range" id="customRange">
+                <input type="range" class="input-primary form-small custom-range" id="customRange">
+                <input type="range" class="input-primary form-large custom-range" id="customRange">
+                <input type="range" class="custom-range form-extra-large" id="customRange">
+            </div>
+            <div class="col-md-3">
+                <h5>Basic Input Range Variant</h5>
+                <input type="range" class="form-control-rounded custom-range" id="customRange">
+                <input type="range" class="form-control-no-radius custom-range" id="customRange">
+                <input type="range" class="form-control-pill custom-range" id="customRange">
+                <input type="range" class="custom-range" id="customRange">
             </div>
         </div>
+        <h3>Basic Inputs Validation</h3>
         <div class="row">
-            <div class="col-md-6">
-                <div class="form-group form-group-dark">
-                    <label for="email">number:</label>
-                    <input type="number" class="form-control" placeholder="Enter email">
+            <div class="col-md-3">
+                <h5>Form Group primary</h5>
+                <div class="form-group form-group-primary has-error">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="pwd">time:</label>
-                    <input type="time" class="form-control" placeholder="Enter password">
+            <div class="col-md-3">
+                <h5>Form Group dark</h5>
+                <div class="form-group has-error form-floating">
+                    <p>&nbsp;</p>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <label for="name">Name:</label>
                 </div>
             </div>
+            <div class="col-md-3">
+                <h5>Form Group light</h5>
+                <div class="form-group has-error form-cover">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group has-error form-underline">
+                    <h5>Form Group</h5>
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your name">
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <h5>Form Group primary</h5>
+                <div class="form-group has-error form-fill-border form-group-primary">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h5>Form Group dark</h5>
+                <div class="form-group has-error form-fill form-group-dark">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control form-control-outline" placeholder="Enter your name">
+                </div>
+            </div>
+
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group form-group-dark">
-                    <label for="email">month:</label>
-                    <input type="month" class="form-control" placeholder="Enter email">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="pwd">search:</label>
-                    <input type="search" class="form-control" placeholder="Enter password">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="pwd">Comment:</label>
-                    <textarea class="form-control" rows="5" name="text"></textarea>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="pwd">Color:</label>
-                    <input type="color" class="form-control form-control-color" value="#CCCCCC">
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="custom-file form-small input-primary">
-                    <input type="file" class="custom-file-input" id="customFile">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
-                <div class="custom-file form-large input-dark">
-                    <input type="file" class="custom-file-input">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
-                <div class="custom-file form-extra-large input-light">
-                    <input type="file" class="custom-file-input">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
-                <div class="custom-file form-extra-small input-light">
-                    <input type="file" class="custom-file-input">
-                    <label class="custom-file-label" for="customFile">Choose file</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <label for="customRange" class="custom-range">Custom range</label>
-                <input type="range" class="form-small custom-range" id="customRange">
-
-                <label for="customRange" class="custom-range">Custom range</label>
-                <input type="range" class=" form-large custom-range" id="customRange">
-                <label for="customRange" class="custom-range">Custom range</label>
-                <input type="range" class="form-extra-small custom-range" id="customRange">
-                <label for="customRange" class="custom-range">Custom range</label>
-                <input type="range" class="form-extra-large custom-range" id="customRange">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="custom-control form-large form-control-outline custom-checkbox ">
-                    <input type="checkbox" checked class="custom-control-input " id="customCheck" name="example1">
-                    <label class="custom-control-label input-primary" for="customCheck">Remember Me</label>
-                </div>
-                <div class="custom-control form-small form-control-outline custom-checkbox ">
-                    <input type="checkbox" checked class="custom-control-input " id="customCheck1" name="example1">
-                    <label class="custom-control-label input-dark" for="customCheck1">Remember Me</label>
-                </div>
-                <div class="custom-control form-extra-small form-control-outline custom-checkbox ">
-                    <input type="checkbox" checked class="custom-control-input " id="customCheck2" name="example1">
-                    <label class="custom-control-label input-light" for="customCheck2">Remember Me</label>
-                </div>
-                <div class="custom-control form-extra-large form-control-outline custom-checkbox ">
-                    <input type="checkbox" checked class="custom-control-input " id="customCheck4" name="example1">
-                    <label class="custom-control-label input-light" for="customCheck4">Remember Me</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="custom-control form-small form-control-outline custom-radio">
-                    <input type="radio" checked class="custom-control-input "  id="c1" name="c1">
-                    <label class="custom-control-label input-dark" for="c1">Remember Me</label>
-                </div>
-                <div class="custom-control form-large form-control-outline custom-radio">
-                    <input type="radio" checked class="custom-control-input "  id="c3" name="c1">
-                    <label class="custom-control-label input-light" for="c3">Remember Me</label>
-                </div>
-                <div class="custom-control form-extra-large form-control-outline custom-radio">
-                    <input type="radio" class="custom-control-input "  id="c2" name="c1">
-                    <label class="custom-control-label input-primary" for="c2">Remember Me 1</label>
-                </div>
-                <div class="custom-control  form-extra-small form-control-outline custom-radio">
-                    <input type="radio" class="custom-control-input "  id="ct" name="c1">
-                    <label class="custom-control-label input-primary" for="ct">Remember Me 1</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="custom-control form-small form-control-outline custom-switch">
-                    <input type="checkbox"  class="custom-control-input "  id="c4" name="c1">
-                    <label class="custom-control-label input-dark" for="c4">Remember Me</label>
-                </div>
-                <div class="custom-control form-large form-control-outline custom-switch">
-                    <input type="checkbox"  class="custom-control-input "  id="c5" name="c1">
-                    <label class="custom-control-label input-light" for="c5">Remember Me</label>
-                </div>
-                <div class="custom-control form-extra-large form-control-outline custom-switch">
-                    <input type="checkbox"   class="custom-control-input "  id="c6" name="c1">
-                    <label class="custom-control-label input-primary" for="c6">Remember Me 1</label>
-                </div>
-                <div class="custom-control form-extra-small form-control-outline custom-switch">
-                    <input type="checkbox"   class="custom-control-input "  id="c8" name="c1">
-                    <label class="custom-control-label input-primary" for="c8">Remember Me 1</label>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
-        </div>
-        <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
-        </div>
-
-
-
-
-
-
-
-
-        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
 </section>
