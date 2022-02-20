@@ -12,10 +12,10 @@
     <style>
 
     </style>
-    <link href="../variable.css" rel="stylesheet">
-    <link href="../grid.css" rel="stylesheet">
-    <link href="../main.css" rel="stylesheet">
-    <link href="../button.css" rel="stylesheet">
+    <link href="../../variable.css" rel="stylesheet">
+    <link href="../../grid.css" rel="stylesheet">
+    <link href="../../main.css" rel="stylesheet">
+    <link href="button.css" rel="stylesheet">
     <title>Document</title>
     <style>
         h5{
@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-md-6">
                 <h5>basic button</h5>
-                <button type="button" class="btn">Basic</button>
+                <button class="btn">Basic</button>
                 <button type="button" class="btn btn-primary ">Primary</button>
                 <button type="button" class="btn btn-dark">Dark</button>
                 <button type="button" class="btn btn-light">Light</button>
@@ -126,127 +126,37 @@
         <div class="col-md-6">
             <h5> button group</h5>
             <div class="btn-group btn-group-lg">
-                <button type="button" class="btn-disabled btn btn-primary">Primary</button>
-                <button type="button" class="btn-disabled btn btn-dark">Dark</button>
-                <button type="button" class="btn-disabled btn btn-light">Light</button>
+                <button type="button" class=" btn btn-primary">Primary</button>
+                <button type="button" class=" btn btn-dark">Dark</button>
+                <button type="button" class=" btn btn-light">Light</button>
             </div>
         </div>
         <div class="col-md-6">
             <h5> button verticle group</h5>
-            <div class="btn-group btn-group-vertical btn-group-lg">
-                <button type="button" class="btn-disabled btn btn-primary">Primary</button>
-                <button type="button" class="btn-disabled btn btn-dark">Dark</button>
-                <button type="button" class="btn-disabled btn btn-light">Light</button>
+            <div class="btn-group-vertical btn-group-lg">
+                <button type="button" class=" btn btn-primary">Primary</button>
+                <button type="button" class=" btn btn-dark">Dark</button>
+                <button type="button" class=" btn btn-light">Light</button>
             </div>
         </div>
         <div class="col-md-6">
             <h5> button group large</h5>
             <div class="btn-group btn-group-lg">
-                <button type="button" class="btn-disabled btn btn-primary">Primary</button>
-                <button type="button" class="btn-disabled btn btn-dark">Dark</button>
-                <button type="button" class="btn-disabled btn btn-light">Light</button>
+                <button type="button" class=" btn btn-primary">Primary</button>
+                <button type="button" class=" btn btn-dark">Dark</button>
+                <button type="button" class=" btn btn-light">Light</button>
             </div>
         </div>
         <div class="col-md-6">
             <h5> button group extra small</h5>
             <div class="btn-group btn-group-xs">
-                <button type="button" class="btn-disabled btn btn-primary">Primary</button>
-                <button type="button" class="btn-disabled btn btn-dark">Dark</button>
-                <button type="button" class="btn-disabled btn btn-light">Light</button>
+                <button type="button" class=" btn btn-primary">Primary</button>
+                <button type="button" class=" btn btn-dark">Dark</button>
+                <button type="button" class=" btn btn-light">Light</button>
             </div>
         </div>
     </div>
 </div>
-
 </body>
-<script>
-    var getNextSibling = function (elem, selector) {
-        var sibling = elem.nextElementSibling;
-        while (sibling) {
-            if (sibling.matches(selector)) return sibling;
-            sibling = sibling.nextElementSibling
-        }
-    };
-    document.body.addEventListener("click",function (e) {
-
-        function resetDropdown(el) {
-            el.setAttribute("data-dropdown-open",false)
-            el.style.visibility="hidden"
-            el.style.opacity="0"
-            el.style.height="0px"
-            el.style.padding="0"
-        }
-        function resetMenu(el) {
-            el.setAttribute("data-menu-open",false)
-            el.style.right="-400px"
-        }
-
-        console.log(e.target)
-        if (e.target.getAttribute("data-toggle") === "dropdown" || e.target.closest(`[data-toggle="dropdown"]`)) {
-            /*dropdown*/
-            e.preventDefault()
-            var dropdown = e.target
-
-            if (e.target.closest(`[data-toggle="dropdown"]`)) {
-                dropdown = e.target.closest(`[data-toggle="dropdown"]`)
-            }
-
-            var dropdowns = [...document.querySelectorAll(`[data-dropdown-open]`)]
-            dropdowns.forEach(v => {
-                if (v.parentElement.querySelector(`[data-toggle="dropdown"]`) !== dropdown) {
-                    console.log("vcjhn")
-                    resetDropdown(v)
-                }
-            })
-            var dropdownMenu = getNextSibling(dropdown, ".dropdown-menu")
-            if (dropdownMenu) {
-                if (dropdownMenu.getAttribute("data-dropdown-open") == "true") {
-                    resetDropdown(dropdownMenu)
-                } else {
-                    dropdownMenu.setAttribute("data-dropdown-open", true)
-                    dropdownMenu.style.height = dropdownMenu.scrollHeight + 5 + "px"
-                    dropdownMenu.style.padding = "5px 0"
-                    dropdownMenu.style.visibility = "visible"
-                    dropdownMenu.style.opacity = "1"
-                    setTimeout(() => {
-                        dropdownMenu.style.overflow = "visible"
-                    }, 300)
-                }
-            }
-        }
-
-        else if(e.target.getAttribute("data-toggle")==="menu" || e.target.closest(`[data-toggle="menu"]`)){
-            /*menu bar*/
-            e.preventDefault()
-            var toggleBtn=e.target
-            if(e.target.closest(`[data-toggle="menu"]`)){
-                toggleBtn=e.target.closest(`[data-toggle="menu"]`)
-            }
-
-            var menu=toggleBtn.parentElement.querySelector("[data-menu]")
-            if(menu){
-                if(menu.getAttribute("data-dropdown-open")=="true"){
-                    resetMenu(menu)
-                }else{
-                    menu.setAttribute("data-menu-open",true)
-                    menu.style.right="0"
-                }
-            }
-        }
-        else{
-            var dropdowns=[...document.querySelectorAll(`[data-dropdown-open]`)]
-            dropdowns.forEach(v=>{
-                resetDropdown(v)
-            })
-            if(!e.target.closest(`[data-menu]`) || (e.target.hasAttribute(`[data-menu-close]`) || e.target.closest(`[data-menu-close]`))){
-                var menu=[...document.querySelectorAll(`[data-menu-open]`)]
-                menu.forEach(v=>{
-                    resetMenu(v)
-                })
-            }
-        }
-    })
-
-    /* menu-open*/
-</script>
+<script src="../../dcss.js"></script>
 </html>

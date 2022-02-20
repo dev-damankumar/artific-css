@@ -20,20 +20,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6147912a-2e6f-492d-9a58-66f4f700d3aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/componants/tooltip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/button/button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/icons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/componants/newForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/componants/accordion/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/componants/alert/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/button.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/accordion.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/accordion/accordion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/alert.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/alert/alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/button.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/button/button.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/modal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/pagination.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/pagination.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/tab.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/tab.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/componants/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/componants/toottip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/componants/tooltip.html" beforeDir="false" afterPath="$PROJECT_DIR$/componants/tooltip.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dcss.js" beforeDir="false" afterPath="$PROJECT_DIR$/dcss.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/modal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tab-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/tab-list.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variable.css" beforeDir="false" afterPath="$PROJECT_DIR$/variable.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +69,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss\componants" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Coding Data\Files\CSS &amp; Styles\Dcss\componants\accordion" />
+      <recent name="E:\Coding Data\Files\CSS &amp; Styles\Dcss\componants\alert" />
+      <recent name="E:\Coding Data\Files\CSS &amp; Styles\Dcss\componants\button" />
+      <recent name="E:\Coding Data\Files\CSS Frameworks\Dcss\componants" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -87,6 +109,23 @@
       <workItem from="1642737933522" duration="253000" />
       <workItem from="1642749884757" duration="3641000" />
       <workItem from="1642773604096" duration="4875000" />
+      <workItem from="1642912775145" duration="62000" />
+      <workItem from="1643032552813" duration="250000" />
+      <workItem from="1643430417564" duration="74000" />
+      <workItem from="1643710153715" duration="4863000" />
+      <workItem from="1643775282899" duration="74000" />
+      <workItem from="1643957408441" duration="3571000" />
+      <workItem from="1643967491789" duration="7656000" />
+      <workItem from="1644125095782" duration="9659000" />
+      <workItem from="1644206315769" duration="82000" />
+      <workItem from="1644388312575" duration="674000" />
+      <workItem from="1644391177072" duration="3581000" />
+      <workItem from="1644496181731" duration="900000" />
+      <workItem from="1644917409199" duration="1143000" />
+      <workItem from="1645080130081" duration="661000" />
+      <workItem from="1645082570778" duration="1610000" />
+      <workItem from="1645168819154" duration="2954000" />
+      <workItem from="1645251511970" duration="155000" />
     </task>
     <servers />
   </component>
@@ -106,10 +145,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="654" y="214" width="516" height="362" key="#File_Watchers" timestamp="1643958669454">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="654" y="214" width="516" height="362" key="#File_Watchers/0.0.1536.816@0.0.1536.816" timestamp="1643958669454" />
+    <state x="540" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1644133081850">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="540" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1644133081850" />
+    <state x="549" y="113" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1643958445829">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="113" key="#com.intellij.ide.macro.MacrosDialog/0.0.1536.816@0.0.1536.816" timestamp="1643958445829" />
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1644134852935">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="499" y="155" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.816@0.0.1536.816" timestamp="1644134852935" />
+    <state x="529" y="127" width="662" height="640" key="EditFileWatcherDialog" timestamp="1643958787110">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="529" y="127" width="662" height="640" key="EditFileWatcherDialog/0.0.1536.816@0.0.1536.816" timestamp="1643958787110" />
+    <state x="277" y="53" key="SettingsEditor" timestamp="1643958789119">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="277" y="53" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1643958789119" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1641738394377">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1536.816@0.0.1536.816" timestamp="1641738394377" />
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1644128143983">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816@0.0.1536.816" timestamp="1644128143983" />
     <state x="583" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1641738390161">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -122,9 +189,9 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="429" y="187" key="run.anything.popup/0.0.1536.816@0.0.1536.816" timestamp="1641827144708" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1642674642855">
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1644132136742">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1642674642855" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1644132136742" />
   </component>
 </project>

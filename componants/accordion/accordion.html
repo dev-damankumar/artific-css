@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="../main.css" rel="stylesheet">
-    <link href="../grid.css" rel="stylesheet">
-    <link href="../button.css" rel="stylesheet">
-    <link href="../accordion.css" rel="stylesheet">
+    <link href="../../main.css" rel="stylesheet">
+    <link href="../../grid.css" rel="stylesheet">
+    <link href="../button/button.css" rel="stylesheet">
+    <link href="accordion.css" rel="stylesheet">
     <style>
         .col-md-6{
             margin-bottom: 20px;
@@ -33,7 +33,7 @@
             <h5>Accordion Basic</h5>
             <div class="accordion-wrap">
                 <div class="accordion open" data-accordion>
-                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                    <div class="accordion-header" data-ripple="true" data-toggle="accordion">
                         <a class="accordion-link">
                             Is you.accordion-panelr team updated with latest web technical skills?
                         </a>
@@ -57,12 +57,12 @@
                 </div>
 
                 <div class="accordion" data-accordion>
-                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                    <div class="accordion-header" data-toggle="accordion">
                         <a class="collapsed accordion-link">
                             Which tools and technologies you use while developing websites?
                         </a>
                     </div>
-                    <div id="collapseTwo" class="accordion-panel" data-parent="#accordion">
+                    <div  class="accordion-panel" >
                         <div class="accordion-body">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
                             porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
@@ -72,12 +72,12 @@
                 </div>
 
                 <div class="accordion" data-accordion>
-                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
-                        <a class="collapsed accordion-link" data-toggle="collapse" href="#collapseThree">
+                    <div class="accordion-header" data-toggle="accordion">
+                        <a class="collapsed accordion-link">
                             How much efficient and experienced are your developers?
                         </a>
                     </div>
-                    <div id="collapseThree" class="accordion-panel" data-parent="#accordion">
+                    <div  class="accordion-panel">
                         <div class="accordion-body">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis dolorem harum officiis
                             porro ratione, reiciendis! Animi, autem beatae blanditiis consequuntur cupiditate eligendi eos fuga
@@ -92,7 +92,7 @@
             <h5>Accordion Separate</h5>
             <div class="accordion-wrap accordion-separate">
                 <div class="accordion open" data-accordion>
-                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion">
+                    <div class="accordion-header" data-toggle="accordion" data-parent="#accordion22">
                         <a class="accordion-link">
                             Is you.accordion-panelr team updated with latest web technical skills?
                         </a>
@@ -750,5 +750,6 @@
     </div>
 </section>
 </body>
-<script src="../dcss.js" defer></script>
+<script src="../../dcss.js" defer></script>
+<script src="../button/button.js"></script>
 </html>

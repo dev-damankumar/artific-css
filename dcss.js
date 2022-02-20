@@ -5,6 +5,13 @@ var getNextSibling = function (elem, selector) {
 		sibling = sibling.nextElementSibling
 	}
 };
+
+let previousOpened = [...document.querySelectorAll("[data-accordion].open")]
+previousOpened.forEach(v => {
+	let panel=v.querySelector(".accordion-panel")
+	panel.style.height=panel.scrollHeight+"px"
+	panel.style.padding="var(--accordion-padding)"
+})
 document.body.addEventListener("click", function (e) {
 	function resetDropdown(el, dropdown) {
 		console.log(e.target)
@@ -111,19 +118,36 @@ document.body.addEventListener("click", function (e) {
 		e.preventDefault()
 		var accordionHeader = e.target
 
+
 		if (e.target.closest(`[data-toggle="accordion"]`)) {
 			accordionHeader = e.target.closest(`[data-toggle="accordion"]`)
 		}
+
 		let accordion = accordionHeader.closest(`[data-accordion]`);
+
+		let panel=accordion.querySelector(".accordion-panel")
+		console.log("panel",panel)
 		let previousOpened = [...document.querySelectorAll("[data-accordion].open")]
 		previousOpened.forEach(v => {
 			if (v !== accordion) {
+				let panel=v.querySelector(".accordion-panel")
 				v.classList.remove("open")
+				panel.style.padding="0 var(--accordion-padding) 0 var(--accordion-padding)"
+				panel.style.height="0px"
 			}
-
 		})
 
+		if(accordion.classList.contains("open")){
+			panel.style.height="0px"
+			panel.style.padding="0 var(--accordion-padding) 0 var(--accordion-padding)"
+		}else{
+			panel.style.height=panel.scrollHeight+"px"
+			panel.style.padding="var(--accordion-padding)"
+		}
 		accordion.classList.toggle("open")
+
+
+		console.log("panel",panel)
 
 	}
 
@@ -190,3 +214,131 @@ tooltips.forEach(t => {
 		t.innerHTML += l
 	}
 })
+
+
+let rgbaToHsla= function (r, g, b, a) {
+	r /= 255;
+	g /= 255;
+	b /= 255;
+
+	let cmin = Math.min(r, g, b),
+		cmax = Math.max(r, g, b),
+		delta = cmax - cmin,
+		h = 0,
+		s = 0,
+		l = 0;
+	if (delta == 0) {
+		h = 0;
+	} else if (cmax == r) {
+		h = ((g - b) / delta) % 6;
+	} else if (cmax == g) {
+		h = (b - r) / delta + 2;
+	} else {
+		h = (r - g) / delta + 4;
+	}
+
+	h = Math.round(h * 60);
+
+
+	if (h < 0) {
+		h += 360;
+	}
+
+	l = (cmax + cmin) / 2;
+
+
+	s = delta == 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
+
+
+	s = +(s * 100).toFixed(1);
+	l = +(l * 100).toFixed(1);
+
+	return {
+		value:"hsl(" + h + "," + s + "%," + l + "%," + a + ")",
+		data:{
+			h,s,l,a:Number(a.trim())
+		}
+	};
+}
+let mouseDown=false
+window.addEventListener("mousedown", e => {
+	mouseDown=true
+	const target = e.target;
+	let initial=target.style.cssText
+	if((target.hasAttribute("data-ripple") || target.nodeName === "BUTTON") && !(target.hasAttribute("data-ripple-disabled") || target.classList.contains("btn-loading") || target.classList.contains("btn-loading-grow") || target.classList.contains("btn-link")|| target.classList.contains("btn-disabled") || target.hasAttribute("disabled") || target.closest("[disabled]") || target.closest("[read-only]")))  {
+		show_ripple(e,target,false,initial);
+	}
+});
+window.addEventListener("focusin", e => {
+	if(!mouseDown){
+		const target = e.target
+		let initial=target.style.cssText
+		if((target.hasAttribute("data-ripple") || target.nodeName === "BUTTON") && !(target.hasAttribute("data-ripple-disabled") || target.classList.contains("btn-loading") || target.classList.contains("btn-loading-grow") || target.classList.contains("btn-link")|| target.classList.contains("btn-disabled") || target.hasAttribute("disabled") || target.closest("[disabled]") || target.closest("[read-only]")))  {
+			show_ripple(e,target,true,initial);
+		}
+	}
+});
+function show_ripple(e,button,focus,initial) {
+	e.stopImmediatePropagation()
+	e.stopPropagation()
+	button.style.overflow="hidden"
+	const style = getComputedStyle(button);
+	let backgroundColor=style['backgroundColor']||""
+
+	if(backgroundColor==="rgba(0, 0, 0, 0)" && !style["background"].includes("gradient")){
+		backgroundColor="rgb(255, 255, 255)"
+	}
+	if(backgroundColor.startsWith("rgb")){
+		backgroundColor=backgroundColor.replace(/^\w*/gm,"").replace(/[(|)]/g,"")
+		var [r,g,b,a]=backgroundColor.split(",")
+		var hslColor=rgbaToHsla(r,g,b,a?a:'1')
+	}
+
+	let ripple_elmnt = document.createElement("span");
+	let diameter = Math.max(parseInt(style.height), parseInt(style.width)) * 1.5;
+	let radius = diameter / 2;
+
+	ripple_elmnt.className = "ripple";
+	ripple_elmnt.style.height = ripple_elmnt.style.width = diameter + "px";
+	ripple_elmnt.style.position = "absolute";
+	ripple_elmnt.style.borderRadius = "1000px";
+	ripple_elmnt.style.pointerEvents = "none";
+
+	ripple_elmnt.style.left = e.offsetX - radius  + "px";
+	ripple_elmnt.style.top = e.offsetY - radius + "px";
+	if(focus){
+		ripple_elmnt.style.left = 10 - radius  + "px";
+		ripple_elmnt.style.top = 5 - radius + "px";
+	}
+	ripple_elmnt.style.transform = "scale(0)";
+	ripple_elmnt.style.transformOrigin = "center";
+	ripple_elmnt.style.transition = "transform 500ms ease, opacity 400ms ease";
+	ripple_elmnt.style.background = `hsl(${hslColor?.data?.h}deg,${hslColor?.data?.s}%,${(hslColor?.data?.l > 60) ? "80%":"100%"},0.3)`;
+
+	button.appendChild(ripple_elmnt);
+
+	setTimeout(() => {
+		ripple_elmnt.style.transform = "scale(1)";
+	}, 10);
+
+	button.addEventListener("mouseup", e => {
+		ripple_elmnt.style.opacity = 0;
+		setTimeout(() => {
+			try {
+				button.style=initial
+				button.removeChild(ripple_elmnt);
+				mouseDown=false
+			} catch(er) {}
+		}, 400);
+	}, {once: true});
+	button.addEventListener("blur", e => {
+		ripple_elmnt.style.opacity = 0;
+		setTimeout(() => {
+			try {
+				button.style=initial
+				button.removeChild(ripple_elmnt);
+				mouseDown=false
+			} catch(er) {}
+		}, 450);
+	}, {once: true});
+}

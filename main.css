@@ -1,3 +1,4 @@
+@import "https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css";
 
 @font-face {
     font-family: SegoeUI Light;
@@ -468,9 +469,6 @@ button {
 a {
     text-decoration: none;
     color: var(--primary);
-}
-a:hover {
-    color: #0a58ca;
 }
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
     color: inherit;

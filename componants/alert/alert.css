@@ -7,6 +7,7 @@
 	--alert-cursor: pointer;
 	--alert-outline-width:2px;
 	--alert-padding:15px;
+	--alert-main-bg:#f8f8f8;
 }
 
 .alert {
@@ -121,6 +122,24 @@
     color: var(--dark-color) ;
     border-color: var(--dark-color) ;
     background: var(--light);
+}
+.alert-note {
+	background: var(--alert-main-bg) !important;
+	box-shadow: none;
+	border: none !important;
+	border-left: calc(var(--alert-outline-width) + 1px) solid !important;
+}
+.alert-note-top {
+	border: none !important;
+	border-top: calc(var(--alert-outline-width) + 1px) solid !important;
+}
+.alert-note-right {
+	border: none !important;
+	border-right: calc(var(--alert-outline-width) + 1px) solid !important;
+}
+.alert-note-bottom {
+	border: none !important;
+	border-bottom: calc(var(--alert-outline-width) + 1px) solid !important;
 }
 @media screen and (max-width: 500px) {
 	.alert{

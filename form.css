@@ -17,6 +17,7 @@
 	display: inline-block;
 	vertical-align: bottom;
 	margin-bottom: var(--input-margin);
+	font-family: "Nunito SemiBold",sans-serif;
 	font-size: var(--input-font-size);
 }
 
@@ -29,6 +30,138 @@
 	outline: none;
 	background: var(--input-background);
 	font-family: 'Nunito Sans', sans-serif;
+}
+.form-input-icon-wrapper-right{
+	position: absolute;
+	top: 50%;
+	left: unset;
+	transform: translateY(-50%);
+	right: var(--input-margin);
+	display: flex;
+	align-items: center;
+}
+.form-input-icon-wrapper-left{
+	position: absolute;
+	top: 50%;
+	left: var(--input-margin);
+	transform: translateY(-50%);
+	right: unset;
+	display: flex;
+	align-items: center;
+}
+.form-input-icon-wrapper-right .icon{
+	margin: 0 0 0 calc(var(--input-margin) - 5px);
+}
+.form-input-icon-wrapper-left ~ .form-control {
+	padding-left: calc(var(--input-font-size) + 15px) !important;
+}
+.form-input-icon-wrapper-right ~ .form-control {
+	padding-right: calc(var(--input-font-size) + 15px) !important;
+}
+.form-group .icon{
+	font-size: var(--input-font-size);
+	margin: 0;
+}
+.form-input-icon-wrapper-left .icon{
+	margin: 0 calc(var(--input-margin) - 5px) 0 0;
+}
+
+.form-control-wrapper{
+	position: relative;
+}
+.form-control-left-wrap{
+	padding-left: calc(var(--input-margin) + calc(var(--input-font-size) + 8px) );
+}
+.form-control-right-wrap{
+	padding-right: calc(var(--input-margin) + calc(var(--input-font-size) + 8px) );
+}
+.form-control-right-wrap-clear{
+	padding-right: calc(var(--input-margin) + calc(var(--input-font-size) + 8px) * 2);
+}
+
+.form-control-count{
+	font-size: 12px;
+}
+
+
+.form-control-group {
+	display: flex;
+	align-items: stretch;
+	flex-wrap: nowrap;
+}
+
+.form-control-prepend, .form-control-append {
+	padding: var(--input-padding) !important;
+	background: #fafafa !important;
+	color: rgb(117, 117, 117);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.form-control-prepend ~ .form-control-wrapper .form-control {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.form-control-append ~ .form-control-wrapper .form-control {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+.form-underline .form-control-prepend, .form-underline .form-control-append {
+	border-left: 0 !important;
+	border-top: 0 !important;
+	border-right: 0 !important;
+	background: none !important;
+}
+
+.form-control-prepend {
+	border: var(--input-outline-width) solid var(--input-border-color);
+	border-radius: var(--input-border-radius) 0 0 var(--input-border-radius) !important;
+	border-right: 0 !important;
+	order: 0;
+}
+
+.form-cover-no-radius-prepend {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	margin-left: calc(var(--input-font-size) * 3);
+}
+
+.form-cover-no-radius-append {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	margin-right: calc(var(--input-font-size) * 3);
+}
+
+.form-cover .form-control-prepend {
+	position: absolute;
+	right: 100%;
+	height: calc(100% + calc(var(--input-outline-width) * 2));
+	top: calc(var(--input-outline-width) * -1);
+}
+
+.form-cover .form-control-append {
+	position: absolute;
+	left: 100%;
+	height: calc(100% + calc(var(--input-outline-width) * 2));
+	top: calc(var(--input-outline-width) * -1);
+}
+
+.form-control-append {
+	border: var(--input-outline-width) solid var(--input-border-color);
+	border-radius: 0 var(--input-border-radius) var(--input-border-radius) 0 !important;
+	border-left: 0 !important;
+	order: 3;
+}
+
+.form-control-wrapper-prepend .form-control {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.form-control-wrapper-append .form-control {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 }
 
 .form-fill {
@@ -77,13 +210,14 @@
 	border: var(--input-outline-width) solid var(--input-border-color);
 }
 .form-floating{
-	margin-top: 10px;
+	margin-top: calc(var(--input-margin) * 3);
 }
-.form-floating .form-control::placeholder {
+.form-floating .form-control::placeholder,.form-floating .form-control::-webkit-input-placeholder{
 	color: transparent;
 }
+
 .form-floating .form-control:focus~label, .form-floating .form-select~label,.form-floating .form-control:not(:placeholder-shown)~label {
-	transform: scale(.85) translateY(-35px) translateX(0);
+	transform: scale(.85) translateY(calc(var(--input-font-size) * -2.7)) translateX(0);
 	padding-left: 0;
 }
 .form-fill-border {
@@ -970,6 +1104,19 @@ select.form-control {
 	flex-wrap: wrap;
 	width: 100%;
 }
+.form-image-group{
+	position: relative;
+}
+.form-image-group .form-control-icon{
+	top: calc(var(--input-margin) - 5px);
+	right: calc(var(--input-margin) + 5px);
+	transform: none;
+	background: var(--primary);
+	color: white;
+	border-radius: 50%;
+	padding: 2px;
+	font-size: var(--input-font-size);
+}
 .form-file-control input {
 	position: absolute;
 	top: 0;
@@ -1036,4 +1183,23 @@ select.form-control {
 	.form-group label {
 		font-size: 14px;
 	}
+}
+
+[disabled],.form-control-disabled{
+	cursor: not-allowed !important;
+	opacity: .7;
+}
+
+.form-control-read-only .form-control{
+	background: #f5f5f5;
+	cursor: default;
+	user-select: none;
+	pointer-events: none;
+}
+
+.form-control-read-only .form-control,.form-control-read-only.form-cover{
+	background: #f5f5f5;
+	cursor: default;
+	user-select: none;
+	pointer-events: none;
 }

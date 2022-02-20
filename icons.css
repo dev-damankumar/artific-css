@@ -1,0 +1,168 @@
+:root {
+    --icon-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    --icon-box-shadow-hover: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    --icon-border-radius: 5px;
+    --icon-padding: 10px;
+    --icon-font-size: 16px;
+    --icon-margin: 10px;
+    --icon-outline-width: 2px;
+    --icon-cursor: pointer;
+    --icon-background: white;
+    --icon-border-color: #ededed;
+    --success: #17b978;
+    --danger: #ff304f;
+}
+.icon{
+    border: none;
+    padding: calc(var(--icon-padding) / 3);
+    font-size: calc(var(--icon-font-size) + 4px);
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin: 0 calc(var(--icon-margin) / 3) 0 0;
+}
+.icon-direction-right{
+    margin: 0 0 0 calc(var(--icon-margin) / 3);
+}
+
+.icon:hover {
+    background: var(--icon-border-color);
+    border-radius: 50%;
+}
+
+.icon-no-hover,.icon-no-hover:hover{
+    padding: 0;
+    background: none;
+}
+
+.icon-extra-small{
+    --icon-padding:4px;
+    --icon-margin:4px;
+    --icon-font-size:9px;
+}
+
+.icon-small{
+    --icon-padding:7px;
+    --icon-margin:7px;
+    --icon-font-size:13px;
+}
+
+.icon-large{
+    --icon-padding:13px;
+    --icon-margin:13px;
+    --icon-font-size:19px;
+}
+
+.icon-extra-large{
+    --icon-padding:16px;
+    --icon-margin:16px;
+    --icon-font-size:22px;
+}
+
+
+@media (min-width: 576px) {
+    .icon-sm-extra-small{
+        --icon-padding:4px;
+        --icon-margin:4px;
+        --icon-font-size:9px;
+    }
+
+    .icon-sm-small{
+        --icon-padding:7px;
+        --icon-margin:7px;
+        --icon-font-size:13px;
+    }
+
+    .icon-sm-large{
+        --icon-padding:13px;
+        --icon-margin:13px;
+        --icon-font-size:19px;
+    }
+
+    .icon-sm-extra-large{
+        --icon-padding:16px;
+        --icon-margin:16px;
+        --icon-font-size:22px;
+    }
+}
+
+@media (min-width: 768px) {
+    .icon-md-extra-small{
+        --icon-padding:4px;
+        --icon-margin:4px;
+        --icon-font-size:9px;
+    }
+
+    .icon-md-small{
+        --icon-padding:7px;
+        --icon-margin:7px;
+        --icon-font-size:13px;
+    }
+
+    .icon-md-large{
+        --icon-padding:13px;
+        --icon-margin:13px;
+        --icon-font-size:19px;
+    }
+
+    .icon-md-extra-large{
+        --icon-padding:16px;
+        --icon-margin:16px;
+        --icon-font-size:22px;
+    }
+}
+
+@media (min-width: 992px) {
+    .icon-lg-extra-small{
+        --icon-padding:4px;
+        --icon-margin:4px;
+        --icon-font-size:9px;
+    }
+
+    .icon-lg-small{
+        --icon-padding:7px;
+        --icon-margin:7px;
+        --icon-font-size:13px;
+    }
+
+    .icon-lg-large{
+        --icon-padding:13px;
+        --icon-margin:13px;
+        --icon-font-size:19px;
+    }
+
+    .icon-lg-extra-large{
+        --icon-padding:16px;
+        --icon-margin:16px;
+        --icon-font-size:22px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .icon-xl-extra-small{
+        --icon-padding:4px;
+        --icon-margin:4px;
+        --icon-font-size:9px;
+    }
+
+    .icon-xl-small{
+        --icon-padding:7px;
+        --icon-margin:7px;
+        --icon-font-size:13px;
+    }
+
+    .icon-xl-large{
+        --icon-padding:13px;
+        --icon-margin:13px;
+        --icon-font-size:19px;
+    }
+
+    .icon-xl-extra-large{
+        --icon-padding:16px;
+        --icon-margin:16px;
+        --icon-font-size:22px;
+    }
+}
+
